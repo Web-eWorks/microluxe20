@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700italic,700);
+
+@font-face {
+  font-family: 'Trade Winds';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../static/TradeWinds.ttf') format('truetype');
+}
+
+/* Horribly hacky. */
+img[alt=title-img], img.title-img {
+    display: block;
+    margin: 0 auto;
+    width: 12rem;
+}
+
+.title {
+	font-family: 'Trade Winds';
+	font-weight: 700;
+	font-size: 5em;
+	text-align: center;
+}
+
+img[alt=image] {
+    display: block;
+    margin: auto;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+h1:not(.title) {
+    page-break-before: always;
+    border-top: 2px double black;
+    border-bottom: 2px double black;
+    font-weight: bolder;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+* {
+    font-family: "Open Sans";
+    font-size: 94%;
+    font-weight: lighter;
+    font-size-adjust: auto;
+}
+
+table {
+    margin: 0;
+}
+
+table, td, th {
+    page-break-inside: avoid;
+    padding: 2px 3px;
+    font-size: 1em;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+body {
+    font-size: 8px;
+}
+
+ul, ol {
+	font-size: 100%;
+    padding-left: 5px;
+    list-style: disc inside;
+}
+
+li, strong {
+    font-size: 100%;
+}
+
+code {
+	color: #333;
+	background-color: #ddd;
+	border-radius: 2px;
+}
+
+pre {
+	border-radius: 5px;
+	background-color: #ddd;
+	padding: 0.5em;
+	padding-left: 1em;
+}
