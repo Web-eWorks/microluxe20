@@ -1,32 +1,55 @@
-<!-- $header Microluxe 20 Space <br> <br> Ability Lists -->
+<!-- $header Microluxe 20 Space <br> <br> Character Abilities <br> & Programs -->
 
-# Program / Ability Lists
+# Character Abilities
 
-<!-- TODO: fixups -->
+<!-- TODO: define abilities characters have and can gain here. -->
 
-The following abilities have been customized and tweaked to make the game as smooth as possible. It is suggested to use these spells for all spell casters in the game, although spells from the SRD can also be used in Microluxe20 with slight modifications. With the following spell system in place, additional spells in the SRD (but not on this list) can easily be discovered in the game as loot, research, etc. if the GM desires.
+# Programs
 
-## Programs (Decker)
+<!-- TODO: More programs - we want 4-6 programs per level -->
 
-### 1st-Level Decker Programs:
+### 1st-Level Programs: Deckers
+- **Sniff:** Investigate the local network for nearby cameras, traps, guards, or Grid-connected information. The caster receives a faint impression of the number and location of objects if successful. Devices with Excellent security cannot be detected with Sniff. _Difficulty:_ 15.
+- **Zap:** Deliver an electrical charge to a single target within 50', dealing 1d6 + Level damage. _Difficulty:_ 10 + target's STR stat. _Additional Attacks:_ add 1d6 damage.
+- **Poke:** Attempt to unlock a door, disable a security measure, steal information, or alert a guard. Fails when used against devices with Good or better security. _Difficulty:_ 15.
 
-## Programs (Officer)
+### 1st-Level Programs: Officers
+- **Status Report:** Track everyone on a certain frequency for 10 minutes / level. Can link tracking beacons into the network. _Difficulty:_ 10.
+- **Targeting Data:** All allies within 50' gain +1 Accuracy for 2 rounds / level. Does not affect the caster. _Difficulty:_ 15.
 
-### 1st-Level Officer Programs:
+<!-- TODO: other officer themed programs. -->
 
-## Psionic Powers (Psion)
+### 2nd-Level Programs
+- **Overload:** Attack the cybernetic implants of a target within 100', dealing 3d6 + Level damage. _Difficulty:_ 12 + target's MIND stat. Fails if the target has no cybernetics. _Additional Attacks:_ add 1d6 damage.
+- **Investigate:** Get detailed information about a network device.
+- **Unlock:** Disables electronic locks with Good or lower security. _Difficulty:_ 20 (good security), 15 (basic security).
 
-<!-- TODO: tweak these -->
+### 4th-Level Programs
+- **Control Camera:** Take control of a local camera for 2 * Level minutes. Gives the caster vision of an area.
+- **Control Turret:** Gain control of a security turret for 2 * Level minutes. Gains vision of the local area and can fire the turret.
 
-Psionic characters can manifest any of their powers, so long as the power level is equal to or below their class level. Unlike spells, all aspects of a power do not automatically scale with level. Instead, they are augmented with additional Hit Points (HP). The augmenting HP cost is noted under each power's entry. Psions are casters, so they can select a "signature" power per power level from 1st upward, reducing its cost by 2 HP. This also means healing spells cast on an injured psion only heal ¼ of the given amount.
+### 6th-Level Programs
 
-The combined HP cost for manifesting and augmenting a power cannot exceed the character's psionic class level. Thus, a 3rd level psion could manifest a level 1 power by spending 1 HP, and augment it by spending 2 additional HP for a total HP cost of 3. Temporary HP cannot be used to manifest powers.
-- **Psionic vs. Magical Effects:** Powers interact with spells and spells interact with powers in the same way a spell or normal spell-like ability interacts with another spell or spell-like ability. For example, detect magic detects psionics and dispel psionics dispels magic.
+### 8th-Level Programs
 
-### 1st-Level Psion Powers: Mantles
+### 10th-Level Programs
+
+### 12th-Level Programs
+
+### 14th-Level Programs
+
+### 16th-Level Programs
+
+### 18th-Level Programs
+
+# Psionic Powers
+
+<!-- TODO: Rework these, move away from SRD reskins. -->
+
+### 1st-Level Psion Powers
 - **Inkling:** Weakly manifest some psionic power, allowing tiny objects or creatures to be moved unpredictably.
 - **Contact:** Project gibberish or meaningless sounds and images into a target's mind, confusing, disorienting, and possibly frightening them. _Duration_: 3 rounds.
-- **Mental Spike:** Send a sharp mental force into a target's mind. Deal 1d6 + 1 force damage _Duration_: Instant.
+- **Mental Spike:** Send a sharp mental force into a target's mind. Deals 1d6 + 1 force damage. _Duration_: Instant.
 
 ### 2nd-Level Psion Powers
 - **Psionic Charm:** Makes one non-aggressive (out of combat) person a friend. _Duration_: 1 hour/level. _Augment_: 4 extra HP raises duration to 1 day/level.
@@ -44,7 +67,7 @@ The combined HP cost for manifesting and augmenting a power cannot exceed the ch
 - **Read Thoughts:** Detect the thoughts of creatures in range. _Duration_: Knowledge, up to 10 rounds/level. _Augment_: None.
 - **Sensitivity to Psychic Impressions:** Find out about an area's past. _Duration_: Knowledge, up to 10 min/level. _Augment_: None.
 
-<h3 class="page-break"> 6th-Level Psion Powers </h3>
+### 6th-Level Psion Powers
 - **Body Adjustment:** You heal 1d12 damage. _Duration_: Instant. _Augment_: Every 2 extra HP heals an extra 1d12.
 - **Dispel Psionics:** Cancel psionic powers and effects. _Duration_: Instant. _Augment_: Each extra HP raises dispel check by 2.
 - **False Sensory Input:** The subject thinks they see, hear, smell, taste, or feel something other than what their senses actually report. _Duration_: Knowledge, up to 10 rounds/level. _Augment_: Every 2 extra HP affects another target.
@@ -83,7 +106,7 @@ The combined HP cost for manifesting and augmenting a power cannot exceed the ch
 - **Moment of Prescience:** You gain an insight bonus equal to your psionic character level on a single attack roll, check, or save. _Duration_: 1 round/level, until discharged. _Augment_: None.
 - **Reddopsi:** Powers targeting you rebound back. _Duration_: 10 min/level. _Augment_: None.
 
-<h3 class="page-break"> 16th-Level Psion Powers </h3>
+### 16th-Level Psion Powers
 - **Astral Seed:** You plant a seed of your rebirth into the Astral Plane (The Astral plane is the space/plane in which Terador, and other worlds, reside. Filled with a thick air-like substance called "miasma", the Astral plane is a timeless plane with ever-changing gravity, known for its magic production). You return from death (even disintegration) after 10 days. _Duration_: Instant. _Augment_: None.
 - **Hypercognition:** You can deduce almost anything. _Duration_: Instant. _Augment_: None.
 - **Mind Blank:** Subject is immune to mental/emotional effects, scrying, and remote viewing. _Duration_: 1 day. _Augment_: None.

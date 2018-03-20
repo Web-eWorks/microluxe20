@@ -1,6 +1,10 @@
 ![title-img](https://github.com/kgrubb/microluxe20/raw/master/src/static/logo-plain.png)
 <h1 class="title">Microluxe 20 <br> <br> Races of Terador</h1>
 
+<!-- TODO: fixup all of this. -->
+
+<!-- Humans and synths are from Sol, the Mir are from Teramir, and various minor races have their own systems.  Mir are very genetically similar to humans, suggesting a 'failed' terraforming attepmt in early history, or genetic tampering by some precursor species. The Terador council is governed by Humans, Synths, the Mir races, and a handful of other alien races interested in galactic politics. Races uninterested in governing are protected by a mutual-defense treaty upheld by the Terador council - anyone attacking them attacks the whole Council. -->
+
 # Introduction
 This is an introduction to the most predominant races of Terador. There are other races and animals native to Terador, but those other races play a significantly smaller role.
 

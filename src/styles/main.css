@@ -1,10 +1,39 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700italic,700);
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Mina:700');
 
 @font-face {
-  font-family: 'Trade Winds';
+  font-family: 'Mina';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../static/Mina-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../static/Exo-2-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Exo 2';
   font-style: normal;
   font-weight: 400;
-  src: url('../static/TradeWinds.ttf') format('truetype');
+  src: url('../static/Exo-2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../static/Exo-2-Bold-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../static/Exo-2-Bold.ttf') format('truetype');
 }
 
 /* Horribly hacky. */
@@ -15,10 +44,15 @@ img[alt=title-img], img.title-img {
 }
 
 .title {
-	font-family: 'Trade Winds';
+	font-family: 'Mina';
 	font-weight: 700;
 	font-size: 5em;
 	text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Mina';
+    font-weight: 700;
 }
 
 img[alt=image] {
@@ -47,8 +81,8 @@ h3 {
 }
 
 * {
-    font-family: "Open Sans";
-    font-size: 94%;
+    font-family: 'Exo 2', 'Open Sans', sans-serif;
+    font-size: 95%;
     font-weight: lighter;
     font-size-adjust: auto;
 }
@@ -77,7 +111,7 @@ ul, ol {
     list-style: disc inside;
 }
 
-li, strong {
+li, strong, em {
     font-size: 100%;
 }
 

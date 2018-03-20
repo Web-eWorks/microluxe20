@@ -3,6 +3,8 @@
 
 # Equipment
 
+<!-- TODO: rework all equipment lists. -->
+
 ## Starting Wealth
 
 <!-- TODO: move to the credit ($) -->

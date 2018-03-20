@@ -2,11 +2,13 @@
 
 # Gamemaster's Guide
 
+<!-- TODO: Rewrite all of this. -->
+
 ## Designer's Notes
 
 ### Setting the DC
 
-The Difficulty Class can vary depending on how the player approaches the task. When setting the DC, think in terms of "What would Bob do?" - Bob being an imaginary 1st level commoner with no modifiers. Bob has 0s for all attributes and no skill bonuses. He's the unheroic man on the street, and the benchmark by which heroes are measured.
+The Difficulty Class can vary depending on how the player approaches the task. When setting the DC, think in terms of "What would Bob do?" - Bob being an imaginary 1st level citizen with no modifiers. Bob has 0s for all stats and no skill bonuses. He's the unheroic man on the street, and the benchmark by which heroes are measured.
 
 In general, I recommend using only four DCs, especially at low levels:
 
@@ -19,17 +21,21 @@ In general, I recommend using only four DCs, especially at low levels:
 
 Never use DC 5. If it's that easy and out of combat, keep the game flowing by having the players succeed automatically. Also, it helps if there's always an easy way to solve a problem. While each character can find at least one solution to a problem and gain the benefit of their highest attribute, there's usually a path of least resistance to be found. All the players have to do is discover it!
 
-At higher levels, encourage the players to come up with ever more heroic solutions to problems. While a barred door might be a pause for thought to 1st level characters, by 10th level it's an excuse for light relief. Your 10th level Fighter would have a +13 Phys and most likely automatically succeed at any DC15 Phys+STR checks – so encourage them to aim for DC20, at least.
+At higher levels, encourage the players to come up with ever more heroic solutions to problems. While a barred door might be a pause for thought to 1st level characters, by 10th level it's an excuse for light relief. Your 10th level Mercenary would have a +13 Phys and most likely automatically succeed at any DC15 Phys+STR checks – so encourage them to aim for DC20, at least.
 
 ### Modifiers and More
 
-Modifiers are the GM's Best Friend. Even a plus or minus 2 can make a world of difference, especially at lower levels. If your Human Rogue is trying to persuade the City Guard to let them enter the Merchant's Quarter after dark (Comm+MIND, DC15), grant them a +2 because the guard recently won at dice and is in a good mood. Alternatively, give them a minus 2 because he lost but drop hints as to the guard's weakness.
+<!-- Rework the examples. -->
+
+Modifiers are the GM's Best Friend. Even a plus or minus 2 can make a world of difference, especially at lower levels. If your Human Assassin is trying to persuade the City Guard to let them enter the Merchant's Quarter after dark (Comm+MIND, DC15), grant them a +2 because the guard recently won at dice and is in a good mood. Alternatively, give them a minus 2 because he lost but drop hints as to the guard's weakness.
 
 If the characters need to find a path through the Deadlands (Know+MIND, DC20) then finding an old trail map (a +4 modifier!) might just save them from becoming zombified minions of a powerful Lich!
 
 Encourage the players to work for those modifiers, and reward them for clever, creative thinking. It's what the game is all about, after all.
 
 ### Fewer Skills Means More Choice
+
+<!-- Rework this to fit the setting. -->
 
 Back in the days of Classic D&D, players could do anything. With no straight-jacketed skill system to limit their choices, the players invented cool and clever solutions to problems. When faced with a 30ft. high statue with rubies for eyes, they erected pulleys to lift and swing the rogue into place far above their heads. Try doing that in 3rd Edition D&D and the GM will be left scratching their head. The D&D skill system has become a list of what the characters can do, silently eliminating all other possibilities, and that's no fun.
 
@@ -47,6 +53,8 @@ Have them roll whatever check seems most appropriate. A roll of 1-10 is a failur
 
 ### Using Existing D&D Monsters
 
+<!-- TODO: maybe drop this? -->
+
 So what happens when you're running a published adventure, or using a Monster from the Monster Manual or SRD?
 
 Simple; use them as is. It doesn't matter that the Orc makes a Listen check to see if it detects the PCs, or if the NPC fails a Spot check. The mechanics are the same (roll d20+modifiers against a DC), and the emphasis should always be on simplicity and speed of play. There's no need to convert any monsters or NPCs to Microluxe20 before you use them. Just roll, and have fun!
@@ -58,6 +66,8 @@ To help with SRD conversions (and to help give some further stat + skill example
 <!-- $data srd-skills.yml skills -->
 
 ## Microluxe20 Monster Building
+
+<!-- TODO: rework this. Merge finished prose back into regular M20. -->
 
 Monster Building under Microluxe20 is so fast, it's possible to do it **on the fly** , right at the game table. And I'm going to show you how, using a Ninja Monkey as an example.
 
@@ -74,6 +84,8 @@ STR 0, DEX 4, MIND 2
 DONE! If the Ninja Monkeys have any special abilities or equipment, note them down but don't bother with setting uses/day, etc; if it's dramatically appropriate for a monster to use its abilities then use them. If you want a more powerful Ninja Monkey, just add Hit Dice, which increases HP, attack bonus and skills. Adjust Stats if it's logical to do so.
 
 # Monster List
+
+<!-- TODO: rework all of this. -->
 
 Any monster from just about any tabletop RPG may be used. The following list helps simplify SRD monsters for use in Microluxe20.
 
@@ -181,6 +193,8 @@ Alternatively, add class levels to intelligent monsters. Start with the base Hit
 
 # Environmental Hazards
 
+<!-- TODO: rework the disease lists to fit the setting tech level. -->
+
 ## Disease
 
 Diseases have various symptoms and are spread through a number of ways. Several typical diseases are summarized below. The entries for diseases include the following information:
@@ -194,6 +208,8 @@ Diseases have various symptoms and are spread through a number of ways. Several 
 
 ## Extreme Heat & Cold
 
+<!-- TODO: a little more fluff, merge back to M20. -->
+
 If not wearing suitable protection, a character must make a Phys + STR check once every 10 minutes (DC 15, +1 per previous check), taking 1d6 damage on each failed save.
 
 ## Falling Damage
@@ -203,6 +219,8 @@ A falling character takes 1d6 HP of damage per 10 feet fallen. If the character 
 In the event that the fall ends in an area laden with spikes or jagged rocks, add +1 HP of damage to falling damage per 10 feet fallen (with a maximum of +10 HP).
 
 <h2 class="page-break">Poison</h2>
+
+<!-- TODO: update the poison list. -->
 
 Characters can possibly take damage from a weapon that has been poisoned, be attacked by a creature whose natural attacks feature poison, consume poison hidden in food or drink, or be poisoned in some other way.
 
@@ -216,6 +234,8 @@ Several typical poisons are summarized below. The entries for poisons include th
 <!-- $data gm-damage.yml poisons -->
 
 ## Traps
+
+<!-- TODO: rework example, update trap list. -->
 
 Whether inside a dungeon or a nobleman's manor house, adventurers can often be hurt, or even killed, without ever encountering a monster of any kind, as many dungeons are filled with debilitating or lethal traps set to keep wayward hands off of fantastic treasures. Several typical traps of varying XP levels are summarized below.
 
