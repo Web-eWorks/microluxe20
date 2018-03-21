@@ -2,7 +2,9 @@
 
 # Introduction
 
-Microluxe20 is a minimalist tabletop role-playing game designed with simplicity in mind. Using an easy-to-grasp, yet extremely robust stat/skill framework, Microluxe20 allows for crafting exciting encounters that are fun and fluid, emphasizing storytelling and player interaction over the traditional "straight-jacket" skill systems found in many modern tabletop games. Microluxe20 Space is an adaptation of the core Microluxe20 rules to a science-fiction setting, with rules for everything from cybernetics to space-flight included.
+Microluxe20 is a minimalist tabletop role-playing game designed with simplicity in mind. Using an easy-to-grasp, yet extremely robust stat/skill framework, Microluxe20 allows for crafting exciting encounters that are fun and fluid, emphasizing storytelling and player interaction over the traditional "straight-jacket" skill systems found in many modern tabletop games.
+
+Microluxe20 Space is an adaptation of the core Microluxe20 rules to be played in a science-fiction setting, with rules for everything from cybernetics to space-flight included. Microluxe20 Space comes with a 'batteries-included' default setting, but the rules are designed to be easily portable to any number of custom settings.
 
 ## First Steps
 
@@ -12,15 +14,15 @@ Microluxe20 is a minimalist tabletop role-playing game designed with simplicity 
 
 A role-playing game (RPG) is a cooperative narration game in which players assume the roles of characters in a fictional setting, deciding freely which actions to take as their fictional alter-ego. The Game Master(GM), the main narrator of the game, describes the game world and its inhabitants. The other players describe the intended actions of their characters, and the GM describes the outcomes. Actions taken within the game succeed or fail according to a formal system of rules and guidelines. For example:
 
-**GM:** “You’re walking along a path in a small wood when you hear noises coming from behind a large bush of vegetation. A sparkle of light reveals a hint of shiny metal...”
+**GM:** “You’re walking along a path in a small wood when you hear noises coming from behind a large bush of vegetation. A ray of light reveals a hint of dull metal...”
 
-**Now it’s your turn:** Are you a fearful adventurer that decides to run for his life? Are you brave enough to search in the wood? Maybe you’re a mercenary that grabs his gun, sure that this is an ambush. Or maybe you’re a smart and cunning ranger, climbing silently on a tree to look at what’s behind the plants. Maybe you’re a decker that uses powerful cybernetic augmentations to clearly see through all obstacles in front of you. The possibilities are limitless! It’s up to you to decide!
+**Now it’s your turn:** Are you a fearful adventurer that decides to run for his life? Are you brave enough to search in the wood? Maybe you’re a mercenary that grabs his gun, sure that this is an ambush. Or maybe you’re a smart and cunning ranger, climbing silently on a tree to look at what’s behind the plants. Maybe you’re a powerful decker that uses drones or cybernetic augmentations to see past all obstacles in front of you. The possibilities are limitless! It’s up to you to decide!
 
 ### How to Play
 
 When playing Microluxe20, the game will follow a basic pattern:
 
-1. The GM shows or describes the world. The GM tells the players where they are and what they are doing, explaining any lore or recent happenings. For example, the GM may describe a small town that the players have just entered, telling them that they see a small service station, an inn and a few farm houses. The GM may elaborate, saying there are mountains in the distance, or bloody footprints on the ground near one of the farm house entrances.
+1. The GM shows or describes the world. The GM tells the players where they are and what they are doing, explaining any lore or recent happenings. For example, the GM may describe a small town that the players have just entered, telling them that they see a small service station, an inn and a few farm houses. The GM may elaborate, saying there are mountains in the distance, or bloody footprints are on the ground near one of the farm house entrances.
 
 2. The players decide on what they want to do, and describe their actions to the GM. Outside of combat, one player may speak for the whole party, or maybe each player has their own plans on what they want to do or investigate. The players don't necessarily need to take turns, but the GM still needs to be able to listen to each player's decision and resolve it. Decision resolution can be simple (for example, if the player simply wants to open the farm house's door, the GM can just tell the player what they see inside) or complex (perhaps the door is locked and the player must work out a way to get inside). In more complex situations, the GM may make use of dice rolls to determine the outcome of the player's action.
 
@@ -32,7 +34,7 @@ This pattern is used for any action resolutions, aside from combat. Once combat 
 
 To play Microluxe20, you will need **paper**, **pencils**, and a conventional set of **d20 tabletop dice**. The dice required to play are a 4-sided die (d4), 6-sided die (d6), 8-sided die (d8), 10-sided die (d10), 12-sided die (d12), 20-sided die (d20), and a Percentile 10-sided die (d10 showing 00/10/20/30, etc).
 
-When referencing dice in the game, dice rolls are often abbreviated to something like "d6" or "d20", where the number after the "d" represents the number of sides on the die. Numbers in front of the "d" dictate how many times the die should be rolled.
+When referencing dice in the game, dice rolls are often abbreviated to something like "2d6" or "1d20", where the number in front of the "d" represents how many times the die should be rolled and the number after the "d" represents the number of sides on the die.
 
 For example, “3d6 + 5” means you roll three 6-sided dice, add their results together, then add 5 to the total.
 
@@ -42,7 +44,11 @@ When creating a character in Microluxe20, you will need to decide on a race and 
 
 ## Races
 
-The Terrador Council counts many races amongst its members, each with their own culture and history. The so-called 'Mir' are the most common race, with Humans coming in at second place. Most other member races are smaller, content with one or two systems to call their own. When creating a character, you will be one of the major races of Terrador.
+<!-- TODO: more races? -->
+
+The Terrador Council counts many races amongst its members, each with their own culture and history. The so-called 'Mir' are the most common race, with Humans coming in at second place. Most other member races are smaller, content with one or two systems to call their own.
+
+When creating a character, you will be one of the major races of the Terador Council:
 
 <!-- $data races.yml races -->
 
@@ -50,7 +56,7 @@ The Terrador Council counts many races amongst its members, each with their own 
 
 Classes define your character's way of life. Your character's class helps shape his/her combat style and methods of overcoming various obstacles. Your class provides a pathway, granting special powers and features for your character.
 
-<!-- TODO: flesh these out -->
+<!-- TODO: flesh these out, add 1st and 5th level abilities. Move class-specific abilities into their respective classes. -->
 
 **Mercenary:** The Jack-of-all-Trades of the galaxy, Mercenaries work for anyone who will hire them, and tend to have a very versatile skillset. They may use any type of armor and weapons. They gain +1 Physical and +1 Accuracy.
 
@@ -90,7 +96,9 @@ Characters also have secondary stats that affect their actions:
 
 	10 + STR stat + 1d6(with a minimum of 3).
 
-If a player's character is damaged to the point where their HP reaches zero (or below zero), the character becomes "downed", or unconscious and near death, with 0 HP. Further damage directly reduces their normally highest stat (either STR, DEX, or MIND). If that stat drops below -10, the character dies. While down, at the start of your turn, roll a d6. You have 3 chances (1 chance per turn) to roll above a 3. If successful, you are stable and return to 1 HP. Otherwise, if unsuccessful 3 turns, the character dies.
+If a player's character is damaged to the point where their HP reaches zero (or below zero), the character becomes "downed", or unconscious and near death, with 0 HP. Further damage directly reduces their normally highest stat (either STR, DEX, or MIND). If that stat drops below -10, the character dies.
+
+While down, at the start of your turn, roll a d6. You have 3 chances (1 chance per turn) to roll above a 3. If successful, you are stable and return to 1 HP. Otherwise, if unsuccessful 3 turns, the character dies.
 
 Sometimes damage in combat is dealt directly to a character's Stats instead of Hit Points. If any stat reaches -10 or below, the character is downed and treated as if they were reduced to 0 HP. Stats damaged directly or while downed will return to their normal levels after a long rest (4 hours).
 
@@ -136,11 +144,9 @@ When making an attack, roll a d20, adding the appropriate **attack bonus** for t
 
 If the total attack bonus is +5 or more, the character can 'split' their attack by adding a -5 penalty to the attack bonus for each extra attack made, until the attack bonus is less than 5. For example, if the total bonus is +12, the character can make two attacks at +7, or three attacks at +2.
 
-Characters using Light Melee weapons may use their DEX bonus instead of their STR bonus; likewise, characters wielding Heavy Ranged weapons may use their STR bonus instead of DEX bonus. Assassins and Rangers may wield 2 light weapons and attack with both in a round, if they take a -2 penalty on all attack rolls that round.
+Characters using Light Melee weapons may use their DEX bonus instead of their STR bonus for making attacks; likewise, characters wielding Heavy Ranged weapons may use their STR bonus instead of DEX bonus. Mercenaries, Assassins and Rangers may wield 2 light weapons and attack with both in a round, if they take a -2 penalty on all attack rolls that round.
 
-Some weapons use ammunition, which is consumed at a rate of 1 for every attack made, regardless of the success. When a weapon is out of ammunition, you must spend a round reloading it before you are able to fire it again.
-
-For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. When wielding a Heavy Melee weapon, add your STR bonus to the damage total; when wielding a Light Melee weapon add your DEX bonus to the total.
+For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. If your character is wielding a Heavy Melee weapon, add your STR bonus to the weapon's damage total; when wielding a Light Melee weapon add your DEX bonus to the total.
 
 **Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10 and add your DEX bonus of 3, getting a total of 11. The damage is enough to finish off the Human for good; seeing no other enemies, you lower your katana and combat ends.
 
@@ -163,11 +169,13 @@ Each level adds:
 * If your character's level divides by three (ex: level 3,6,9,etc.) add 1 point to STR, DEX or MIND.
 * New program slots and power levels are unlocked at levels 2,4,6,8,etc.
 
-<br class="page-break">
+<div class="page-break-after"> </div>
 
 ## Programs
 
-Characters with a Deck implant may use Programs, powerful abilities that manipulate the local Grid. Each Deck has a specific bonus used when casting Programs, and a bonus to a character's Program slots. Characters start with a set number of Program slots and gain an additional slot every second level. The number of Programs a character can have in their Deck is determined by adding the character's Program slots and their Deck's maximum slots.
+Characters with a Deck implant may use Programs, powerful abilities that manipulate the local Grid. Each Deck has a specific bonus used when casting Programs, and a bonus to a character's Program slots. Characters start with a set number of Program slots and gain an additional slot every second level.
+
+The number of Programs a character can have in their Deck is determined by adding the character's Program slots and their Deck's maximum slots. Exchanging Programs between a Deck and storage is a simple action, but must be performed outside of combat due to the delicacy involved.
 
 Every program has a cost in Hit Points that must be paid to cast it. Once a character has cast a Program, they are in a state called "Tech Haze" and cannot be healed by item or ability until they take a short rest.
 
@@ -177,9 +185,13 @@ Casting a Program is simple - players subtract the HP cost of the Program and ro
 
 Some programs allow making additional attacks, similar to normal combat. For each addition attack made, subtract 5 from the Program bonus. The new bonus applies to all attacks made that turn, and the bonus cannot be brought below 0.
 
-Exchanging Programs between a Deck and storage is a simple action, but must be performed outside of combat due to the delicacy involved.
+Programs are often used to interact with Grid-connected objects in the world. These objects are known as _devices_, and can be anything - a security camera, a locked door, a data cache, or even a guard's cybernetic implant. All devices have a metric of how difficult it is to interact with them, called _security_, that affects a program's casting DC. The levels of security, in order of difficulty, are:
 
-<!-- TODO: Device security levels: none -3, basic +0, good +5, excellent +10, superior +15 -->
+- **None:** A completely unsecured device, just open for the taking. Program difficulty: -3.
+- **Basic:** Using only the most rudimentary of security measures, these devices require at least a little skill to overcome. Program difficulty: +0.
+- **Good:** Secured with fairly standard measures, devices with Good security are fairly difficult to hack. Program difficulty: +5.
+- **Excellent:** Using cutting-edge security measures and techniques, these devices are normally used in major infrastructure and corporate security. Program difficulty: +10.
+- **Perfect:** So secure the world does't even know about it, Perfect security is almost never utilized on anything outside of official Terador Council systems. Program difficulty: +20.
 
 When casting Programs, the efficiency of the Program can be increased in several ways by spending extra HP. The most common ways are listed here:
 
@@ -203,9 +215,7 @@ The outcome of a Psion's use of an power is determined by rolling 1d20 and addin
 
 After using a Psionic ability, Psions are in a state known as Psionic Interference, rendering them unable to heal, much like characters using Decks. This state fades when the character takes a short rest.
 
-<!-- TODO: Powered armor and exoskeletons. Maybe in the Equipment document? -->
-
-<!-- TODO: Spaceflight. Maybe a separate document? -->
+<div class="page-break-after"></div>
 
 ## Resting & Recuperating
 

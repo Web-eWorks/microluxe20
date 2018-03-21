@@ -1,9 +1,9 @@
-![title-img](https://github.com/kgrubb/microluxe20/raw/master/src/static/logo-plain.png)
-<h1 class="title">Microluxe 20 Space <br> <br> Equipment Tables</h1>
+<!-- $header Microluxe 20 Space <br> <br> Equipment Tables -->
 
 # Equipment
 
 <!-- TODO: rework all equipment lists. -->
+<!-- TODO: Powered armor and exoskeletons. Maybe in the Equipment document? -->
 
 ## Starting Wealth
 
@@ -18,6 +18,10 @@ You begin with a certain amount of acquired wealth, determined by your character
 <!-- $data wealth.yml class_wealth -->
 
 ## Weapons
+
+Some weapons use ammunition, which is consumed at a rate of 1 for every attack made, regardless of the success. When a weapon is out of ammunition, you must spend a round reloading it before you are able to fire it again.
+
+Some weapons (such as grenades) are thrown at the enemy and then do damage; to resolve these, the character makes a skill check to throw the weapon (usually DEX+Accuracy) and the location of the weapon is determined by the Gamemaster, then attacks are rolled for each character caught in the weapon's attack radius. A weapon's attack roll is 1d20 + the weapon's attack bonus. For all attacks that succeed, damage is resolved normally.
 
 Here is the format for weapon entries (given as column headings on the table below):
 
