@@ -116,7 +116,7 @@ gulp.task('release', done => fs.stat('documents', (err) => {
 }));
 
 gulp.task('watch', () => {
-  gulp.watch([config.mdPath, config.cssPath], ['compile']);
+  gulp.watch([config.mdPath, config.cssPath], gulp.series('compile'));
 });
 
 gulp.task('default', () => {

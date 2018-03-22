@@ -3,50 +3,63 @@
 # Equipment
 
 <!-- TODO: rework all equipment lists. -->
-<!-- TODO: Powered armor and exoskeletons. Maybe in the Equipment document? -->
 
-## Starting Wealth
+## Currency
 
-<!-- TODO: move to the credit ($) -->
+The most common currency used across all of Terador space is the Council Credit, normally known as the Credit ($). The credit is a standardized currency jointly developed by Sol and Teramir, traded on an extremely decentralized Council-wide banking system. The end result is a currency highly resistant to forgery and inflation that can be taken anywhere an adventurer wants to go.
 
-The most common coin is the _gold piece_ (gp).
+Credits are stored on Credsticks - passively-powered, biometric-protected micro-computers issued by a number of banking organizations. One credstick holds a virtually-infinite amount of credits, and the currency stored can be transferred between credsticks at any computing platform with a compatible port.
 
-<!-- $data wealth.yml coins -->
+The conversion rates for certain metals historically used as currency are listed below:
 
-You begin with a certain amount of acquired wealth, determined by your character class.
+<!-- $data wealth.yml metal -->
+
+You begin with a certain amount of acquired credits, determined by your character class.
 
 <!-- $data wealth.yml class_wealth -->
 
 ## Weapons
 
-Some weapons use ammunition, which is consumed at a rate of 1 for every attack made, regardless of the success. When a weapon is out of ammunition, you must spend a round reloading it before you are able to fire it again.
-
-Some weapons (such as grenades) are thrown at the enemy and then do damage; to resolve these, the character makes a skill check to throw the weapon (usually DEX+Accuracy) and the location of the weapon is determined by the Gamemaster, then attacks are rolled for each character caught in the weapon's attack radius. A weapon's attack roll is 1d20 + the weapon's attack bonus. For all attacks that succeed, damage is resolved normally.
-
 Here is the format for weapon entries (given as column headings on the table below):
 
 - **Damage:** The damage column gives the damage dealt by the weapon on a successful hit.
-- **Range:** Any attack less than this distance is not penalized. However, every extra 5ft. imposes a -2 penalty on the attack roll.
-- **Complexity:** Different weapons require different amount of training to use. The level of complexity relies on the player's class. For example, Mages cannot use Complex weapons.
-- **Cost:** This value is the price for purchasing the weapon. The cost includes miscellaneous gear that goes with the weapon (For example, buying a bow would include a quiver as well).
+- **Range:** If a weapon can be thrown or fired, this is the range at which a normal attack is made. Any attack less than this distance is not penalized. However, every extra doubling of this distance imposes a -5 penalty on the attack roll.
+- **Size:** The size of a weapon determines which stat is used to determine hits, as well as which classes can use it. For example, Deckers can only use Light weapons.
+- **Cost:** This value is the price for purchasing the weapon. The cost includes miscellaneous gear that goes with the weapon (for example, buying a knife includes a sheath).
 
-### Light Weapons
+### Melee Weapons
 
-<!-- $data weapons.yml light -->
+<!-- $data weapons.yml melee -->
+
+<div class="page-break-after"></div>
 
 ### Ranged Weapons
 
+Ranged weapons use ammunition, which is consumed at a rate of 1 for every attack made, regardless of if the attack hit. When a weapon is out of ammunition, you must spend a round reloading it before you are able to fire it again. When purchased, they include one full load of ammunition and any required gear (magazine, etc.)
+
+Ranged weapons have a few extra headings:
+
+- **Ammo:** The number of shots the weapon can fire before reloading. The weapon includes this as part of the purchase price. "–" in the Ammo field indicates a single shot weapon that doesn't need to be reloaded as a separate action.
+- **Cost:** The cost of one full load of ammunition follows the cost of the actual weapon.
+
 <!-- $data weapons.yml ranged -->
 
-<h3 class="page-break"> Two-Handed Weapons </h3>
+###  Thrown Weapons
 
-<!-- $data weapons.yml two-handed -->
+Some weapons (such as grenades) are thrown at the enemy and then do damage. To resolve attacks with these weapons, make a skill check to throw the weapon (usually DEX+Accuracy), and roll attacks for each character caught in the weapon's attack radius. A weapon's attack roll is 1d20 + the weapon's attack bonus. For all attacks that succeed, damage is resolved normally.
 
-### One-Handed Weapons
+The format for thrown weapons is as follows:
 
-<!-- $data weapons.yml one-handed -->
+- **Damage:** The damage (or other effect) done by the weapon when it lands.
+- **Radius:** This is the distance from the object which characters must be in to be affected.
+- **Range:** The normal range at which the weapon can be thrown.
+- **Cost:** The amount in credits the item can normally be purchased for.
+
+<!-- $data weapons.yml thrown -->
 
 ## Armor & Shields
+
+<!-- TODO: Powered armor and exoskeletons. -->
 
 Here is the format for armor entries (given as column headings on the table below):
 
@@ -62,7 +75,11 @@ Here is the format for armor entries (given as column headings on the table belo
 
 <!-- $data armor.yml shields -->
 
-<h2 class="page-break"> Adventuring Equipment </h2>
+<div class="page-break-after"></div>
+
+## Adventuring Equipment
+
+<!-- TODO: rework all of this. -->
 
 Characters may purchase equipment from the following lists with their starting money or select one of the standard adventuring "fast packs".
 
@@ -78,7 +95,7 @@ Characters may purchase equipment from the following lists with their starting m
 
 <!-- $data gear.yml mounts -->
 
-<h3 class="page-break"> Fast Equipment Packs </h3>
+### Fast Equipment Packs
 
 Suggested starting packs for new characters. Each pack uses 35gp of a character's starting money.
 

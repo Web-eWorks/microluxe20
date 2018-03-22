@@ -144,9 +144,9 @@ When making an attack, roll a d20, adding the appropriate **attack bonus** for t
 
 If the total attack bonus is +5 or more, the character can 'split' their attack by adding a -5 penalty to the attack bonus for each extra attack made, until the attack bonus is less than 5. For example, if the total bonus is +12, the character can make two attacks at +7, or three attacks at +2.
 
-Characters using Light Melee weapons may use their DEX bonus instead of their STR bonus for making attacks; likewise, characters wielding Heavy Ranged weapons may use their STR bonus instead of DEX bonus. Mercenaries, Assassins and Rangers may wield 2 light weapons and attack with both in a round, if they take a -2 penalty on all attack rolls that round.
+Characters using Light melee weapons may use their DEX bonus instead of their STR bonus for making attacks; likewise, characters wielding Heavy ranged weapons may use their STR bonus instead of DEX bonus. Mercenaries, Assassins and Rangers may wield 2 Light weapons and attack with both in a round, if they take a -2 penalty on all attack rolls that round.
 
-For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. If your character is wielding a Heavy Melee weapon, add your STR bonus to the weapon's damage total; when wielding a Light Melee weapon add your DEX bonus to the total.
+For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. If your character is wielding a Heavy melee weapon, add your STR bonus to the weapon's damage total; likewise, add your character's DEX bonus if you are wielding a Light melee weapon.
 
 **Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10 and add your DEX bonus of 3, getting a total of 11. The damage is enough to finish off the Human for good; seeing no other enemies, you lower your katana and combat ends.
 
