@@ -17,18 +17,18 @@ data:
 
     - Handaxe | 1d6 | – | Normal | $35
     - Mace | 1d6 | — | Normal | $40
-    - Shortsword | 1d6 | — | Normal | $60
-    - Shortspear | 1d6 | 20ft. | Normal | $70
-    - Scimitar | 1d6 | — | Normal | $75
-    - Flail | 1d8 | — | Normal | $95
+    - Shortsword | 1d6 | — | Normal | $160
+    - Shortspear | 1d6 | 20ft. | Normal | $170
+    - Scimitar | 1d6 | — | Normal | $175
+    - Flail | 1d8 | — | Normal | $145
 
-    - Pickaxe | 1d6 | — | Heavy | $40
+    - Pickaxe | 1d6 | — | Heavy | $50
     - Sledgehammer | 1d8 | — | Heavy | $70
-    - Mace, heavy | 1d8 | — | Heavy | $80
-    - Trident | 1d8 | 15ft. | Heavy | $125
-    - Battleaxe | 1d10 | — | Heavy | $160
-    - Longsword | 1d10 | — | Heavy | $170
-    - Battlesledge | 2d6 | – | Heavy | $210
+    - Mace, heavy | 1d8 | — | Heavy | $110
+    - Trident | 1d8 | 15ft. | Heavy | $140
+    - Battleaxe | 1d10 | — | Heavy | $180
+    - Longsword | 1d10 | — | Heavy | $230
+    - Battlesledge | 2d6 | – | Heavy | $310
 
     # TODO: more weapons?
 
@@ -39,33 +39,29 @@ header:
     - Weapon | Damage | Range | Ammo | Size | Cost
     - :----- | :----- | :---- | :--- | :--- | :---
 data:
-    - Dart | 1d4 | 20ft. | – | Light | $2
-    - Kunai | 1d4 | 40ft. | – | Light | $5
-    - Shuriken | 1d6 | 25ft. | – | Normal | $10
-    - Javelin | 1d6 | 35ft. | – | Normal | $20
-    - Crossbow, hand | 1d8 | 35ft. | – | Normal | $100 / $2
-    - Shortbow, composite | 1d8 | 80ft. | – | Light | $150 / $5
-    - Longbow, composite | 2d6 | 120ft. | – | Normal | $240 / $8
-
     - Stun Pistol | 1d3 Stun | 30ft. | 3 | Light | $60 / $10
-    - Pistol, light | 1d6 | 45ft. | 8 | Light | $80 / $14
-    - SMG, light | 1d6 | 35ft. | 10 | Light | $140 / $25
-    - Blaster Pistol | 1d6+1 | 50ft. | 6 | Light | $160 / $30
+    - Dart Pistol | 1d4 | 40ft. | 12 | Light | $90 / $15
+    - Pistol, light | 1d6 | 45ft. | 8 | Light | $110 / $14
+    - Blaster Pistol | 1d6+1 | 50ft. | 5 | Light | $160 / $30
+    - SMG, light | 1d6 | 40ft. | 10 | Light | $230 / $25
+    - Composite Shortbow | 1d8 | 80ft. | – | Light | $150 / $5
 
-    - Pistol, heavy | 1d8 | 50ft. | 6 | Normal | $130 / $20
-    - Carbine | 1d8 | 80ft. | 10 | Normal | $110 / $35
-    - Rifle | 1d8 | 100ft. | 6 | Normal | $170 / $15
-    - SMG, heavy | 1d8+1 | 50ft. | 8 | Normal | $230 / $40
-    - Shotgun | 1d8+2 | 30ft. | 4 | Normal | $210 / $15
-    - Blaster Carbine | 1d10 | 90ft. | 5 | Normal | $290 / $40
-    - Battle Rifle | 1d12 | 100ft. | 6 | Normal | $210 / $30
+    - Wrist Crossbow | 1d8 | 35ft. | – | Normal | $170 / $2
+    - Pistol, heavy | 1d8 | 50ft. | 6 | Normal | $240 / $20
+    - SMG, heavy | 1d8+1 | 50ft. | 8 | Normal | $310 / $40
+    - Carbine | 1d8 | 70ft. | 10 | Normal | $340 / $35
+    - Shotgun | 1d8+2 | 30ft. | 4 | Normal | $350 / $15
+    - Composite Longbow | 1d10 | 120ft. | – | Normal | $280 / $8
+    - Rifle | 1d10 | 80ft. | 6 | Normal | $430 / $15
+    - Blaster Carbine | 1d10 | 90ft. | 5 | Normal | $550 / $40
+    - Battle Rifle | 1d12 | 100ft. | 6 | Normal | $610 / $30
 
-    - Blaster Rifle | 1d12 | 125ft. | 4 | Heavy | $340 / $35
-    - Sniper Rifle | 1d12+1 | 150ft. | 5 | Heavy | $370 / $40
-    - Auto Shotgun | 2d6 | 35ft. | 8 | Heavy | $410 / $35
-    - Rail Rifle | 2d8 | 80ft. | 3 | Heavy | $530 / $20
-    - Laser Repeater | 2d8+1 | 120ft. | 8 | Heavy | $560 / $20
-    - Heavy LMG | 3d6 | 80ft. | 6 | Heavy | $625 / $80
+    - Blaster Rifle | 1d12 | 125ft. | 4 | Heavy | $840 / $35
+    - Auto Shotgun | 2d6 | 35ft. | 8 | Heavy | $910 / $35
+    - Sniper Rifle | 1d12+1 | 150ft. | 5 | Heavy | $970 / $40
+    - Rail Rifle | 2d8 | 80ft. | 3 | Heavy | $1230 / $20
+    - Laser Repeater | 2d8+1 | 120ft. | 8 | Heavy | $1260 / $20
+    - Heavy LMG | 3d6 | 80ft. | 6 | Heavy | $1625 / $80
 
     # TODO: more guns?
 
@@ -76,9 +72,13 @@ header:
     - Weapon | Damage | Range | Radius | Cost
     - :----- | :----- | :---- | :----- | :---
 data:
-    - Flashbang Grenade | 1d4 + 1d2 Stun | 30ft. | 25ft. | $40
-    - Concussion Grenade | 1d6 | 40ft. | 15ft. | $65
-    - Fragmentation Grenade | 1d8 | 35ft. | 20ft. | $80
-    - Gas Grenade | 1d6 + 1d4 Stun | 35ft. | 25ft. | $90
+    - Dart | 1d4 | 20ft. | – | $1
+    - Shuriken | 1d4+1 | 25ft. | – | $4
+    - Kunai | 1d6 | 40ft. | – | $8
+    - Javelin | 1d8 | 35ft. | – | $15
+    - Flashbang Grenade | 1d3 Stun | 45ft. | 20ft. | $25
+    - Concussion Grenade | 1d4 + 1d2 Stun | 40ft. | 15ft. | $30
+    - Fragmentation Grenade | 1d6 | 40ft. | 20ft. | $35
+    - Tear-Gas Grenade | 1d6 + 1d2 Stun | 35ft. | 25ft. | $45
 
-    # TODO: more grenades
+    # TODO: more grenades, more thrown weapons

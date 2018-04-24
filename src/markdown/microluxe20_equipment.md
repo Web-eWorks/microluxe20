@@ -6,15 +6,15 @@
 
 ## Currency
 
-The most common currency used across all of Terador space is the Council Credit, normally known as the Credit ($). The credit is a standardized currency jointly developed by Sol and Teramir, traded on an extremely decentralized Council-wide banking system. The end result is a currency highly resistant to forgery and inflation that can be taken anywhere an adventurer wants to go.
+The most common currency used across all of Terador space is the Council Credit, normally known as the credit ($). The credit is a standardized currency jointly developed by Sol and Teramir, traded on an extremely decentralized Council-wide banking system. The end result is a currency highly resistant to forgery and inflation that can be taken anywhere an adventurer wants to go.
 
-Credits are stored on Credsticks - passively-powered, biometric-protected micro-computers issued by a number of banking organizations. One credstick holds a virtually-infinite amount of credits, and the currency stored can be transferred between credsticks at any computing platform with a compatible port.
+Credits are stored on Credsticks - passively-powered, biometrically-protected micro-computers issued by a number of banking organizations. One credstick holds a functionally-infinite amount of credits, and the currency stored can be transferred between credsticks at any computing platform with a compatible port.
 
-The conversion rates for certain metals historically used as currency are listed below:
+The approximate market prices for certain metals historically used as currency are listed below:
 
 <!-- $data wealth.yml metal -->
 
-You begin with a certain amount of acquired credits, determined by your character class.
+You begin with a certain amount of acquired credits, determined by your character class:
 
 <!-- $data wealth.yml class_wealth -->
 
@@ -39,7 +39,7 @@ Ranged weapons use ammunition, which is consumed at a rate of 1 for every attack
 
 Ranged weapons have a few extra headings:
 
-- **Ammo:** The number of shots the weapon can fire before reloading. The weapon includes this as part of the purchase price. "–" in the Ammo field indicates a single shot weapon that doesn't need to be reloaded as a separate action.
+- **Ammo:** The number of shots the weapon can fire before reloading. The weapon includes this as part of the purchase price. A "–" in the Ammo field indicates the entry is a single shot weapon that doesn't need to be reloaded as a separate action.
 - **Cost:** The cost of one full load of ammunition follows the cost of the actual weapon.
 
 <!-- $data weapons.yml ranged -->
@@ -47,6 +47,8 @@ Ranged weapons have a few extra headings:
 ###  Thrown Weapons
 
 Some weapons (such as grenades) are thrown at the enemy and then do damage. To resolve attacks with these weapons, make a skill check to throw the weapon (usually DEX+Accuracy), and roll attacks for each character caught in the weapon's attack radius. A weapon's attack roll is 1d20 + the weapon's attack bonus. For all attacks that succeed, damage is resolved normally.
+
+Thrown weapons follow the rules for making secondary attacks, except with one caveat – instead of making a second attack, the weapon's damage is increased by half its primary die size. Thus, a 1d4 Concussion Grenade would deal 1d4+2 damage if two "attacks" are made.
 
 The format for thrown weapons is as follows:
 
@@ -56,6 +58,8 @@ The format for thrown weapons is as follows:
 - **Cost:** The amount in credits the item can normally be purchased for.
 
 <!-- $data weapons.yml thrown -->
+
+<div class="page-break-after"> </div>
 
 ## Armor & Shields
 
@@ -94,6 +98,8 @@ Characters may purchase equipment from the following lists with their starting m
 ### Mounts and Related Gear
 
 <!-- $data gear.yml mounts -->
+
+<div class="page-break-after"></div>
 
 ### Fast Equipment Packs
 

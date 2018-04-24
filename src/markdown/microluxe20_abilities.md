@@ -4,6 +4,19 @@
 
 <!-- TODO: define abilities characters have and can gain here. -->
 
+Class Abilities:
+
+<!-- Weapons and Armor classes can equip. -->
+
+| Class Name | Light | Normal | Heavy  | Armor  |
+| :--------- | :---- | :----- | :----  | :----  |
+| Mercenary  | Yes   | Yes    | Yes    | Heavy  |
+| Officer    | Yes   | Yes    | No     | Normal |
+| Ranger     | Yes   | Ranged | Ranged | Normal |
+| Assassin   | Yes   | Melee  | Melee  | Light  |
+| Decker     | Yes   | No     | No     | Light  |
+| Psion      | Yes   | No     | No     | Light  |
+
 # Programs
 
 <!-- TODO: More programs - we want 4-6 programs per level -->
@@ -14,6 +27,8 @@
 - **Poke:** Attempt to unlock a door, disable a security measure, steal information, or alert a guard. Fails when used against devices with Good or better security. _Difficulty:_ 15.
 
 ### 1st-Level Programs: Officers
+<!-- TODO: define tracking beacons in the equipment section. -->
+
 - **Status Report:** Track everyone on a certain frequency for 10 minutes / level. Can link tracking beacons into the network. _Difficulty:_ 10.
 - **Targeting Data:** All allies within 50' gain +1 Accuracy for 2 rounds / level. Does not affect the caster. _Difficulty:_ 15.
 

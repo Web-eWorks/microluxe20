@@ -46,9 +46,7 @@ When creating a character in Microluxe20, you will need to decide on a race and 
 
 <!-- TODO: more races? -->
 
-The Terrador Council counts many races amongst its members, each with their own culture and history. The so-called 'Mir' are the most common race, with Humans coming in at second place. Most other member races are smaller, content with one or two systems to call their own.
-
-When creating a character, you will be one of the major races of the Terador Council:
+The Terrador Council counts many races amongst its members, each with their own culture and history. The so-called 'Mir' are the most common race, with Humans coming in at second place. Most other member races are smaller, content with one or two systems to call their own. When creating a character, you will be one of the major races of the Terador Council:
 
 <!-- $data races.yml races -->
 
@@ -60,13 +58,13 @@ Classes define your character's way of life. Your character's class helps shape 
 
 **Mercenary:** The Jack-of-all-Trades of the galaxy, Mercenaries work for anyone who will hire them, and tend to have a very versatile skillset. They may use any type of armor and weapons. They gain +1 Physical and +1 Accuracy.
 
-**Assassin:** Specialized killers, Assassins can infiltrate all layers of society in search of their target. Despite the name, Assassins handle much more than "simple" ice jobs; many find employment as espionage experts or data-runners. They may use Light ranged weapons and armor, and any melee weapons. They gain +2 Cunning.
+**Officer:** Tactical and strategic leaders, Officers come from a wide variety of backgrounds, with the Council Navy being the most common. Officers may use Normal weapons and armor, and can use some types of Programs. They gain +2 Communication, +2 Program slots, a basic Deck implant, and Officer programs.
 
-**Decker:** Rulers of the Grid, Deckers are nigh-omniscient anywhere there's an unsecured network. They may use Light weapons and armor, and can use all types of Programs. They gain +2 Knowledge, +5 Program slots, a basic Deck implant, and Decker programs.
+**Assassin:** Specialized killers, Assassins can infiltrate all layers of society in search of their target. Despite the name, Assassins handle much more than "simple" ice jobs; many find employment as espionage experts or data-runners. They may use Light ranged weapons and armor, and any melee weapons. They gain +2 Cunning.
 
 **Ranger:** Colonial Rangers make the unexplored reaches, vast forests, and high mountain peaks of unexplored planets their homes. Unparalleled snipers and survival experts, Rangers often find temporary employment as gunners aboard starships on their way from planet to planet. They may use Light melee weapons, all types of ranged weapons, and Normal armor. They gain +2 Accuracy.
 
-**Officer:** Tactical and strategic leaders, Officers come from a wide variety of backgrounds, with the Council Navy being the most common. Officers may use Normal weapons and armor, and can use some types of Programs. They gain +2 Communication, +2 Program slots, a basic Deck implant, and Officer programs.
+**Decker:** Rulers of the Grid, Deckers are nigh-omniscient anywhere there's an unsecured network. They may use Light weapons and armor, and can use all types of Programs. They gain +2 Knowledge, +5 Program slots, a basic Deck implant, and Decker programs.
 
 **Psion:** Strange quirks of nature, Psions can twist and warp the very fabric of reality. Psions may only use Light weapons and armor, and can use Psionic Abilities. They gain +1 Knowledge and +1 Cunning. Synths may not be Psions.
 
@@ -136,6 +134,10 @@ When entering combat, the pace of the game shifts from the free-form nature of e
 
 The order in which characters take their turns in combat is determined by rolling d20 + DEX bonus for **initiative** at the start of each round (ties are settled with a re-roll).
 
+When all characters (including Gamemaster's characters) have taken their turn, the round is over. If there are any opponents left alive or not incapacitated, a new round begins. Otherwise, combat is over.
+
+### Attacking
+
 When making an attack, roll a d20, adding the appropriate **attack bonus** for the action. If the resulting total is greater than your opponent's Armor Class (AC), it's a hit. Rolling a 20 on the die (Natural 20) is an automatic hit, dealing additional damage equal to your weapon's maximum damage. Rolling a 1 on the die (Natural 1) is an automatic fail, dealing no damage regardless of the attack bonus.
 
 **Melee attack bonus** = STR bonus + Physical Skill
@@ -148,9 +150,19 @@ Characters using Light melee weapons may use their DEX bonus instead of their ST
 
 For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. If your character is wielding a Heavy melee weapon, add your STR bonus to the weapon's damage total; likewise, add your character's DEX bonus if you are wielding a Light melee weapon.
 
-**Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10 and add your DEX bonus of 3, getting a total of 11. The damage is enough to finish off the Human for good; seeing no other enemies, you lower your katana and combat ends.
+**Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10 and add your DEX bonus of 3, getting a total of 11. The damage is enough to finish off the Human for good, so you lower your weapon and combat ends.
 
-When all characters (including Gamemaster's characters) have taken their turn, the round is over. If there are any opponents left alive or not incapacitated, a new round begins. Otherwise, combat is over.
+<!-- TODO: aiming, called shots, stun -->
+
+### Defending
+
+On their turn, a character may choose to actively defend themselves. This is an action, and as such the character cannot attack and defend on the same turn. A defending character rolls 1d10 and adds it to their Armor Class until their next turn.
+
+If an enemy attacks your character while you are defending and misses, you get a chance to make a counterattack. A counterattack is handled like a regular single attack, but the attack bonus is calculated as if you were making the maximum number of attacks that turn - you use the lowest possible attack bonus for the attack.
+
+**Example:** You are fighting a rogue combat android. You elect to defend on your turn, rolling 1d10 and raising your AC to 19. The android takes a swing at you, and misses slightly. You counterattack by firing your pistol at the android's core - you normally have a +7 attack bonus, so the counterattack is made with a +2 attack bonus. Your roll of 17 is enough to overcome the android's defenses, and you proceed to roll damage normally.
+
+<div class="page-break-after"></div>
 
 ## Level Advancement
 
@@ -168,8 +180,6 @@ Each level adds:
 * +2 points to spend on skills. When upgrading skills, you cannot add more points to a skill if it is higher than or equal to your character's level + 5.
 * If your character's level divides by three (ex: level 3,6,9,etc.) add 1 point to STR, DEX or MIND.
 * New program slots and power levels are unlocked at levels 2,4,6,8,etc.
-
-<div class="page-break-after"> </div>
 
 ## Programs
 
@@ -191,13 +201,15 @@ Programs are often used to interact with Grid-connected objects in the world. Th
 - **Basic:** Using only the most rudimentary of security measures, these devices require at least a little skill to overcome. Program difficulty: +0.
 - **Good:** Secured with fairly standard measures, devices with Good security are fairly difficult to hack. Program difficulty: +5.
 - **Excellent:** Using cutting-edge security measures and techniques, these devices are normally used in major infrastructure and corporate security. Program difficulty: +10.
-- **Perfect:** So secure the world does't even know about it, Perfect security is almost never utilized on anything outside of official Terador Council systems. Program difficulty: +20.
+- **Perfect:** So secure the world does't even know about it, Perfect security is almost never utilized on anything outside of official Terador Council systems. Program difficulty: +15.
 
 When casting Programs, the efficiency of the Program can be increased in several ways by spending extra HP. The most common ways are listed here:
 
 - **Extending:** Makes a Program last twice as long. _Cost:_ 2 HP.
 - **Expanding:** Make a Program's area of effect 50% larger. Single-target programs can affect multiple targets for 1/2 the program's cost. _Cost:_ 4 HP.
 - **Empowering:** Makes a Program deal twice as much damage or be twice as effective. _Cost:_ 6 HP.
+
+<div class="page-break-after"></div>
 
 ## Psionics
 
@@ -214,8 +226,6 @@ The outcome of a Psion's use of an power is determined by rolling 1d20 and addin
 **Psionic Bonus** = MIND Bonus + Knowledge skill.
 
 After using a Psionic ability, Psions are in a state known as Psionic Interference, rendering them unable to heal, much like characters using Decks. This state fades when the character takes a short rest.
-
-<div class="page-break-after"></div>
 
 ## Resting & Recuperating
 

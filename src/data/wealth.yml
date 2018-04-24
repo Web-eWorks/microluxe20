@@ -15,7 +15,7 @@ header:
     - Class | Amount
     - :--- | :---
 data:
-    - Assassin, Mercenary | $300
-    - Officer | $250
-    - Ranger, Decker | $225
-    - Psion | $200
+    - Assassin, Mercenary | $1100
+    - Officer | $900
+    - Ranger, Decker | $800
+    - Psion | $750
