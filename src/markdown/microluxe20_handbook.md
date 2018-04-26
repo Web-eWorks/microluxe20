@@ -122,19 +122,18 @@ Some weapons do Stun damage; this damage is resolved as normal, but is not subtr
 
 <div class="float-right t-full">
 
-| Effect 		| Cost
+| Roll	 		| Cost
 | :----- 		| :---
 | Stat 			| 3
+| Damage		| 2
 | Skill			| 2
 | Stat + Skill	| 1
 
 </div>
 
-Whatever the story you decided on for your character, Microluxe20 includes a way to make it a part of your character. Traits and Quirks are situational bonuses or disadvantages, respectively, for your character.
+Traits and Quirks are ways to fully bring your character's story into the game. To create a Trait or Quirk, you pick a topic – like snakes, or spaceships – and a specific type of roll that it will apply to. The more specific the roll, the less the Trait or Quirk will cost. Then you determine how much that roll should be increased or penalized. If it is increased you have a Trait, if it's decreased you have a Quirk.
 
-To design a Trait or Quirk, you pick a topic, and a stat, skill, or stat+skill roll. Then you figure out how much that roll should be increased or penalized. If it is increased you have a Trait, if it's decreased you have a Quirk.
-
-The cost of a Trait or Quirk is equal to the increase or penalty multiplied by the appropriate entry in the table on the right. You can pay for it in two ways – the first is to take an equal or greater value of Quirks than Traits, and the other is to pay with Skill points. One Skill Point is equal to 3 Trait points.
+The cost of a Trait or Quirk is equal to the numerical increase or penalty multiplied by the appropriate entry in the table on the right. You can pay for it in two ways – the first is to take an equal or greater value of Quirks than Traits, and the other is to pay with Skill points. One Skill Point is equal to 3 Trait points.
 
 Traits and Quirks should always be checked with your Gamemaster first. Take care not to be too specific or too broad with your topic – your Gamemaster will reject a +3 MIND Trait with a topic of "everything", and a Quirk regarding a very specific brand of pistol will likely meet the axe as well. Likewise, you should take Traits and Quirks in moderation. Having 20+ Traits or Quirks (especially if they're not relevant to your character's story) will likely be rejected by your Gamemaster.
 
@@ -144,7 +143,7 @@ Traits and Quirks are not static. As your character gets more experienced, you c
 
 ## Cybernetics
 
-<!-- TODO: write up rules for cybernetics: slots, limits, bonuses, etc. -->
+**TODO:** write up rules for cybernetics: slots, limits, bonuses, etc.
 
 # Gameplay
 

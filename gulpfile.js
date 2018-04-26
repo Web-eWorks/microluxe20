@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const markdownpdf = require('gulp-markdown-pdf');
 const zip = require('gulp-zip');
 const changed = require('gulp-changed');
+const changedInPlace = require('gulp-changed-in-place');
 const fs = require('fs');
 const path = require('path');
 const pjson = require('./package.json');
@@ -9,7 +10,7 @@ const yaml = require('js-yaml');
 const through = require('through2');
 
 const config = {
-  dataPath: 'src/data/',
+  dataPath: 'src/data/*.{yml,yaml}',
   mdPath: 'src/markdown/*.md',
   cssPath: 'src/styles/main.css',
   paperFormat: 'Letter',
@@ -25,21 +26,19 @@ function replaceData(directive) {
   const matches = directive.match(/(\S+)\s*(\S+)/);
   if (matches === null) return '';
 
-  const fname = matches[1];
-  const key = matches[2];
-  // Load the appropriate YAML file.
-  if (!(fname in dataFiles)) {
-    const p = path.join(config.dataPath, fname);
-    const d = fs.readFileSync(p);
-    dataFiles[fname] = yaml.safeLoadAll(d);
+  const file = dataFiles[matches[1]];
+  if (file === undefined) {
+    console.log(`No such file ${matches[1]}.`);
+    return '';
   }
-
-  const file = dataFiles[fname];
 
   // Get the table YAML document matching the key, or the first if no key.
   let doc;
-  for (const d of file) if (d.id === key) doc = d;
-  if (doc === undefined) return '';
+  for (const d of file) if (d.id === matches[2]) doc = d;
+  if (doc === undefined) {
+    console.log(`No such table ${matches[2]} in file ${matches[1]}.`);
+    return '';
+  }
 
   // Convert it into markdown, optionally combining multiple columns.
   let header = '';
@@ -88,11 +87,19 @@ function preProcessMd(data, e, cb) {
   cb(null, Buffer.from(newData));
 }
 
-// compile all the documents
-gulp.task('compile', () => {
+// Load data when it has changed.
+gulp.task('load-data', () => {
+  return gulp.src(config.dataPath)
+    .pipe(changedInPlace({firstPass: true}))
+    .pipe(through.obj((file, enc, cb) => {
+      let data = yaml.safeLoadAll(file.contents);
+      dataFiles[file.relative] = data;
+      cb();
+    }));
+});
+
+gulp.task('compile-md', () => {
   const cwd = process.cwd();
-  // clear the file buffer between compiles.
-  dataFiles = {};
   return gulp.src(config.mdPath)
     .pipe(changed(config.out, {
       extension: '.pdf',
@@ -106,6 +113,9 @@ gulp.task('compile', () => {
     .pipe(gulp.dest(config.out));
 });
 
+// compile all the documents
+gulp.task('compile', gulp.series('load-data', 'compile-md'));
+
 // create release zip from documents
 gulp.task('release', done => fs.stat('documents', (err) => {
   if (err) {
@@ -118,11 +128,12 @@ gulp.task('release', done => fs.stat('documents', (err) => {
 }));
 
 gulp.task('watch', () => {
-  gulp.watch([config.mdPath, config.cssPath], gulp.series('compile'));
+  gulp.watch([config.mdPath, config.cssPath], gulp.task('compile'));
 });
 
-gulp.task('default', () => {
+gulp.task('default', cb => {
   console.log(fs.readFileSync(config.readme, {
     encoding: 'UTF8',
   }));
+  cb();
 });
