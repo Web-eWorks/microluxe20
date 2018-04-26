@@ -1,4 +1,4 @@
-<!-- $header Microluxe 20 Space <br> <br> Equipment Tables -->
+<!-- $header Equipment Tables -->
 
 # Equipment
 
@@ -6,17 +6,21 @@
 
 ## Currency
 
-The most common currency used across all of Terador space is the Council Credit, normally known as the credit ($). The credit is a standardized currency jointly developed by Sol and Teramir, traded on an extremely decentralized Council-wide banking system. The end result is a currency highly resistant to forgery and inflation that can be taken anywhere an adventurer wants to go.
-
-Credits are stored on Credsticks - passively-powered, biometrically-protected micro-computers issued by a number of banking organizations. One credstick holds a functionally-infinite amount of credits, and the currency stored can be transferred between credsticks at any computing platform with a compatible port.
-
-The approximate market prices for certain metals historically used as currency are listed below:
+<div class="float-right t-full">
 
 <!-- $data wealth.yml metal -->
 
-You begin with a certain amount of acquired credits, determined by your character class:
+-----
 
 <!-- $data wealth.yml class_wealth -->
+
+</div>
+
+The most common currency used across all of Terador space is the Council Credit, normally known as the credit ($). The credit is a standardized currency jointly developed by Sol and Teramir, traded on an extremely decentralized Council-wide banking system. The end result is a currency highly resistant to forgery and inflation that can be taken anywhere an adventurer wants to go.
+
+Credits are stored on Credsticks – passively-powered, biometrically-protected micro-computers issued by a number of banking organizations. One credstick holds a functionally-infinite amount of credits, and the credits stored can be transferred between credsticks at any computing platform with a compatible port.
+
+You begin with a certain amount of acquired credits, as determined by your character class.
 
 ## Weapons
 

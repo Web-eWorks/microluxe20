@@ -1,15 +1,17 @@
-<!-- $header Microluxe 20 <br> <br> Vehicles & Spaceships -->
+<!-- $header Vehicles & Spaceships -->
 
 # Ground Vehicles
 
-<!-- TODO: driving -->
+<!-- TODO: driving rules -->
+
+## Creating Ground Vehicles
+
+<!-- TODO: vehicle creation rules -->
 
 # Spaceflight
 
-## Flying Spaceships
-
-<!-- TODO: spaceflight rules: piloting, gunnery, sensors, etc. -->
+<!-- TODO: space/atmo flight rules: piloting, gunnery, sensors, etc. -->
 
 ## Creating a Spaceship
 
-<!-- TODO: spaceship creation. -->
+<!-- TODO: spaceship creation rules -->

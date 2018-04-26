@@ -1,6 +1,6 @@
 ---
 id: races
-columns: 2
+columns: 3
 header:
     - Race | Bonus
     - :--- | :---
@@ -9,7 +9,9 @@ data:
     - "**Synth** | +2 MIND, -1 STR, +1 Skill"
     - "**Elvir** | +2 DEX"
     - "**Tauremir** | +2 STR"
-    - "**Dwarmir** | +1 STR, +1 MIND"
-    - "**Gorimir** | +1 DEX, +1 MIND"
-    - "**Felemir** | +2 DEX, -1 STR, +1 Skill"
-    - "**Orkeir** | +2 STR, -1 MIND, +1 Skill"
+    - "**Dwarmir** | +1 STR, +1 DEX"
+    - "**Suurmir** | +1 STR, +1 MIND"
+    - "**Felemir** | +1 DEX, +1 MIND"
+    - "**Orkeir** | +3 STR, -1 MIND"
+    - "**Dracomir** | +3 STR, -1 DEX"
+    - "**Xindai'n** | +2 DEX, +1 MIND, -1 STR"

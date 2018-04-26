@@ -1,4 +1,4 @@
-<!-- $header-main Microluxe 20 <br> <br> Gamemaster's Resources -->
+<!-- $header-main Gamemaster's Resources -->
 
 # Gamemaster's Guide
 

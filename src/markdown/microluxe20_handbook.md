@@ -1,4 +1,4 @@
-<!-- $header-main Microluxe 20 Space <br> <br> Handbook -->
+<!-- $header-main Handbook -->
 
 # Introduction
 
@@ -6,29 +6,21 @@ Microluxe20 is a minimalist tabletop role-playing game designed with simplicity 
 
 Microluxe20 Space is an adaptation of the core Microluxe20 rules to be played in a science-fiction setting, with rules for everything from cybernetics to space-flight included. Microluxe20 Space comes with a 'batteries-included' default setting, but the rules are designed to be easily portable to any number of custom settings.
 
-## First Steps
-
-<!-- TODO: rewrite for space -->
-
 ### What is a Role-Playing Game?
 
-A role-playing game (RPG) is a cooperative narration game in which players assume the roles of characters in a fictional setting, deciding freely which actions to take as their fictional alter-ego. The Game Master(GM), the main narrator of the game, describes the game world and its inhabitants. The other players describe the intended actions of their characters, and the GM describes the outcomes. Actions taken within the game succeed or fail according to a formal system of rules and guidelines. For example:
-
-**GM:** “You’re walking along a path in a small wood when you hear noises coming from behind a large bush of vegetation. A ray of light reveals a hint of dull metal...”
-
-**Now it’s your turn:** Are you a fearful adventurer that decides to run for his life? Are you brave enough to search in the wood? Maybe you’re a mercenary that grabs his gun, sure that this is an ambush. Or maybe you’re a smart and cunning ranger, climbing silently on a tree to look at what’s behind the plants. Maybe you’re a powerful decker that uses drones or cybernetic augmentations to see past all obstacles in front of you. The possibilities are limitless! It’s up to you to decide!
+A role-playing game (RPG) is a cooperative narration game in which players assume the roles of characters in a fictional setting, deciding freely which actions to take as their fictional alter-ego. The Game Master (GM), the main narrator of the game, describes the game world and its inhabitants. The other players describe the intended actions of their characters, and the GM describes the outcomes. Actions taken within the game succeed or fail according to a formal system of rules and guidelines, outlined in this document.
 
 ### How to Play
 
 When playing Microluxe20, the game will follow a basic pattern:
 
-1. The GM shows or describes the world. The GM tells the players where they are and what they are doing, explaining any lore or recent happenings. For example, the GM may describe a small town that the players have just entered, telling them that they see a small service station, an inn and a few farm houses. The GM may elaborate, saying there are mountains in the distance, or bloody footprints are on the ground near one of the farm house entrances.
+1. The GM shows or describes the world. The GM tells the players where they are and what they are doing, explaining any lore or recent happenings. For example, the GM may describe a small town that the players have just entered, telling them that they see a small service station, an inn and a few simple farm houses. The GM may elaborate, saying there are mountains in the distance, or bloody footprints are on the ground near the entrance of one of the farm houses.
 
-2. The players decide on what they want to do, and describe their actions to the GM. Outside of combat, one player may speak for the whole party, or maybe each player has their own plans on what they want to do or investigate. The players don't necessarily need to take turns, but the GM still needs to be able to listen to each player's decision and resolve it. Decision resolution can be simple (for example, if the player simply wants to open the farm house's door, the GM can just tell the player what they see inside) or complex (perhaps the door is locked and the player must work out a way to get inside). In more complex situations, the GM may make use of dice rolls to determine the outcome of the player's action.
+2. The players decide on what they want to do, and describe their actions to the GM. Outside of combat, one player may speak for the whole party, or maybe each player has their own plans on what they want to do or investigate. The players don't necessarily need to take turns, but the GM still needs to be able to listen to each player's decision and resolve it. Decision resolution can be simple (for example, if the player simply wants to open the farm house's door, the GM can just tell the player what they see inside) or complex (perhaps the door is locked and the player must work out a way to get inside). In more complex situations, the GM or the player may make dice rolls to determine the outcome of the player's action.
 
 3. After the player decides on their action and describes it, the GM responds with the results of the player's action. Once the GM describes the outcome, the pattern starts over again, returning to step 1.
 
-This pattern is used for any action resolutions, aside from combat. Once combat begins in a situation, the game switches to a more rigid and structured ruleset, where players take turns deciding on and completing actions. Outside of combat, this basic pattern continues to keep everything fluid and simple, continually adapting to the adventure's storyline.
+This pattern is used for any action resolutions, aside from combat. Once combat begins in a situation, the game switches to a more rigid and structured form, where players take turns deciding on and completing actions. Outside of combat, this basic pattern continues to keep everything fluid and simple, continually adapting to the adventure's storyline.
 
 ### Items Needed
 
@@ -40,13 +32,15 @@ For example, “3d6 + 5” means you roll three 6-sided dice, add their results 
 
 # Character Creation
 
-When creating a character in Microluxe20, you will need to decide on a race and class. After choosing your character's race and class, you can configure their stats and skills.
+Creating a character in Microluxe20 is very simple. You pick a race and class, assign Stats and Skills, and determine your starting HP and AC. That's it!
+
+If you want to get more complicated, it is recommended that you create a short history for your character and pick a few Traits and Quirks. Perhaps you're a lifelong spacer, born and raised aboard a space station the size of a metropolis? Maybe you've never been off-world before, always dreaming of the stars? Perhaps you're a bored mercenary, thinking you've seen everything?
 
 ## Races
 
-<!-- TODO: more races? -->
+The Terador Council counts many races amongst its members, each with their own culture and history. The so-called 'Mir' are the most common race, with Humans coming in at second place. Most other member races are smaller, content with one or two systems to call their own.
 
-The Terrador Council counts many races amongst its members, each with their own culture and history. The so-called 'Mir' are the most common race, with Humans coming in at second place. Most other member races are smaller, content with one or two systems to call their own. When creating a character, you will be one of the major races of the Terador Council:
+When creating a character, you will be one of the member races of the Terador Council.
 
 <!-- $data races.yml races -->
 
@@ -56,19 +50,17 @@ Classes define your character's way of life. Your character's class helps shape 
 
 <!-- TODO: flesh these out, add 1st and 5th level abilities. Move class-specific abilities into their respective classes. -->
 
-**Mercenary:** The Jack-of-all-Trades of the galaxy, Mercenaries work for anyone who will hire them, and tend to have a very versatile skillset. They may use any type of armor and weapons. They gain +1 Physical and +1 Accuracy.
+**Mercenary:** The Jack-of-all-Trades of the galaxy, Mercenaries work for anyone who will hire them, and tend to have a very versatile skillset. They may use any type of armor and weapons.
 
-**Officer:** Tactical and strategic leaders, Officers come from a wide variety of backgrounds, with the Council Navy being the most common. Officers may use Normal weapons and armor, and can use some types of Programs. They gain +2 Communication, +2 Program slots, a basic Deck implant, and Officer programs.
+**Officer:** Tactical and strategic leaders, Officers come from a wide variety of backgrounds, with the Council Navy being the most common. Officers may use Normal weapons and armor, and can use some types of Programs. They start with 2 Program slots, a basic Deck implant, and Officer programs.
 
-**Assassin:** Specialized killers, Assassins can infiltrate all layers of society in search of their target. Despite the name, Assassins handle much more than "simple" ice jobs; many find employment as espionage experts or data-runners. They may use Light ranged weapons and armor, and any melee weapons. They gain +2 Cunning.
+**Assassin:** Specialized killers, Assassins can infiltrate all layers of society in search of their target. Despite the name, Assassins handle much more than "simple" ice jobs; many find employment as espionage experts or data-runners. They may use Light ranged weapons and armor, and any melee weapons.
 
-**Ranger:** Colonial Rangers make the unexplored reaches, vast forests, and high mountain peaks of unexplored planets their homes. Unparalleled snipers and survival experts, Rangers often find temporary employment as gunners aboard starships on their way from planet to planet. They may use Light melee weapons, all types of ranged weapons, and Normal armor. They gain +2 Accuracy.
+**Ranger:** Colonial Rangers make the unexplored reaches, vast forests, and high mountain peaks of unexplored planets their homes. Unparalleled snipers and survival experts, Rangers often find temporary employment as gunners aboard starships on their way from planet to planet. They may use Light melee weapons, all types of ranged weapons, and Normal armor.
 
-**Decker:** Rulers of the Grid, Deckers are nigh-omniscient anywhere there's an unsecured network. They may use Light weapons and armor, and can use all types of Programs. They gain +2 Knowledge, +5 Program slots, a basic Deck implant, and Decker programs.
+**Decker:** Rulers of the Grid, Deckers are nigh-omniscient anywhere there's an unsecured network. They may use Light weapons and armor, and can use all types of Programs. They start with 5 Program slots, a basic Deck implant, and Decker programs.
 
-**Psion:** Strange quirks of nature, Psions can twist and warp the very fabric of reality. Psions may only use Light weapons and armor, and can use Psionic Abilities. They gain +1 Knowledge and +1 Cunning. Synths may not be Psions.
-
-All classes receive 1 unallocated skill point to distribute as they wish.
+**Psion:** Strange quirks of nature, Psions can twist and warp the very fabric of reality. Psions may only use Light weapons and armor, and can use Psionic Abilities.
 
 ## Stats & Saves
 
@@ -86,41 +78,69 @@ When creating a character, you get 10 points to freely spend on your core stats,
 
 For compatibility purposes, the 3 saves in Microluxe20 (STR save, DEX save, and MIND save), directly match Fortitude, Reflex, and Will saves (often called "saving throws") found in other SRD-based games.
 
-## Additional Stats
-
-Characters also have secondary stats that affect their actions:
-
-**Hit Points (HP)**: Hit Points determine how healthy a character is. As they are injured or hurt, their HP depletes. To determine a character's starting HP, use the following formula:
-
-	10 + STR stat + 1d6(with a minimum of 3).
-
-If a player's character is damaged to the point where their HP reaches zero (or below zero), the character becomes "downed", or unconscious and near death, with 0 HP. Further damage directly reduces their normally highest stat (either STR, DEX, or MIND). If that stat drops below -10, the character dies.
-
-While down, at the start of your turn, roll a d6. You have 3 chances (1 chance per turn) to roll above a 3. If successful, you are stable and return to 1 HP. Otherwise, if unsuccessful 3 turns, the character dies.
-
-Sometimes damage in combat is dealt directly to a character's Stats instead of Hit Points. If any stat reaches -10 or below, the character is downed and treated as if they were reduced to 0 HP. Stats damaged directly or while downed will return to their normal levels after a long rest (4 hours).
-
-**Speed** comes in 3 tiers. You are either Slow(20ft.), Normal(30ft.) or Fast(35ft.). Speed is determined by the game master and can be affected by equipment and conditions. Typically, Mercenaries or Officers with Heavy armor are Slow, Assassins and Rangers are Fast, and the rest are Normal speed.
-
-**Armor Class (AC):** A character's Armor Class represents their ability to evade or block physical attacks. The higher a character's AC, the more difficult it is to land a damaging blow. A character's Armor Class is determined by this formula:
-
-	10 + DEX bonus + Armor bonus + Racial bonus (if applicable).
-
 ## Skills
 
-There are 5 skills all characters have in common. When making a skill roll, add the relevant Stat Bonus to the skill value and roll a d20. If the result is equal to or higher than than the given Difficulty Class, the roll has succeeded.
+There are 5 skills all characters have in common.
 
 - **Physical:** The character's ability in hand-to-hand combat and their instinctual knowledge of applying their own bodily force to a problem.
-- **Accuracy:** The character's aim with anything from a stone to a gunship turret.
+- **Accuracy:** The character's ability to hit a specific target, applied to anything from a stone to a gunship turret.
 - **Cunning:** The character's street-smarts and their understanding of subterfuge and deceit.
 - **Knowledge:** The character's wealth of accumulated information and their understanding of how to apply it.
 - **Communication:** The character's ability to effectively command others, talk their way out of (or into) a sticky situation, and their ability to tell if others are lying or withholding information.
+
+When creating a character, you get 3 skill points to allocate how you wish.
+
+When making a skill roll, add the relevant Stat Bonus to the skill value and roll 1d20. If the result is equal to or higher than than the given Difficulty Class, the roll has succeeded.
 
 **Skill Value** = any bonus due to your class or race + any allocated points.
 
 **Skill Roll** = d20 + skill value + stat bonus + situation modifiers
 
 For example, Climbing would use Physical + STR bonus. Dodging a falling rock is Physical + DEX bonus. Finding a trap is Cunning + MIND bonus. Disabling a trap is Cunning + DEX bonus.
+
+## Additional Stats
+
+Characters also have secondary stats that affect their actions:
+
+**Hit Points (HP)**: Hit Points determine how healthy a character is. As they are injured or hurt, their HP depletes. A character's starting HP is determined with the formula `10 + STR stat + 1d6(with a minimum of 3)`.
+
+If a player's character is damaged to the point where their HP reaches zero (or below zero), the character becomes "downed", or unconscious and near death, with 0 HP. Damage from subsequent attacks directly reduces their normally highest stat (either STR, DEX, or MIND). If that stat drops below -10, the character dies.
+
+While down, at the start of your turn, roll a d6. You have 3 chances (1 chance per turn) to roll above a 3. If successful, you are stable and return to 1 HP. Otherwise, if unsuccessful 3 turns, the character dies.
+
+Sometimes damage in combat is dealt directly to a character's Stats instead of Hit Points. If any stat reaches -10 or below, the character is downed and treated as if they were reduced to 0 HP. If the character takes further damage to that stat, they die.
+
+Stats damaged directly or while downed will return to their normal levels after a long rest (4 hours).
+
+Some weapons do Stun damage; this damage is resolved as normal, but is not subtracted from the character's HP. Instead, the character is stunned and unable to act for a number of rounds equal to the damage rolled. If a character is stunned, they must make a MIND+Physical check against `DC 15 + Rounds of Stun Remaining` to attempt to regain lucidity before the stun effect wears off.
+
+**Speed** comes in 3 tiers. You are either Slow(20ft.), Normal(30ft.) or Fast(35ft.). Speed is determined by the game master and can be affected by equipment and conditions. Typically, Mercenaries or Officers with Heavy armor are Slow, Assassins and Rangers are Fast, and the rest are Normal speed.
+
+**Armor Class (AC):** A character's Armor Class represents their ability to evade or block physical attacks. A character's Armor Class is determined with the formula `10 + DEX bonus + Armor bonus`.
+
+## Traits and Quirks
+
+<div class="float-right t-full">
+
+| Effect 		| Cost
+| :----- 		| :---
+| Stat 			| 3
+| Skill			| 2
+| Stat + Skill	| 1
+
+</div>
+
+Whatever the story you decided on for your character, Microluxe20 includes a way to make it a part of your character. Traits and Quirks are situational bonuses or disadvantages, respectively, for your character.
+
+To design a Trait or Quirk, you pick a topic, and a stat, skill, or stat+skill roll. Then you figure out how much that roll should be increased or penalized. If it is increased you have a Trait, if it's decreased you have a Quirk.
+
+The cost of a Trait or Quirk is equal to the increase or penalty multiplied by the appropriate entry in the table on the right. You can pay for it in two ways – the first is to take an equal or greater value of Quirks than Traits, and the other is to pay with Skill points. One Skill Point is equal to 3 Trait points.
+
+Traits and Quirks should always be checked with your Gamemaster first. Take care not to be too specific or too broad with your topic – your Gamemaster will reject a +3 MIND Trait with a topic of "everything", and a Quirk regarding a very specific brand of pistol will likely meet the axe as well. Likewise, you should take Traits and Quirks in moderation. Having 20+ Traits or Quirks (especially if they're not relevant to your character's story) will likely be rejected by your Gamemaster.
+
+**Example:** Your character is a bright young farmboy who got a chance to work his way to the stars aboard a bulk freighter. You pick a +2 Knowledge bonus to farming, and a +2 Ranged Attack bonus to hunting game. You equalize this by taking a -2 MIND quirk to knowledge about spaceships.
+
+Traits and Quirks are not static. As your character gets more experienced, you can gain new Traits or Quirks, or remove old ones. See the Level Advancement section for details.
 
 ## Cybernetics
 
@@ -130,7 +150,7 @@ For example, Climbing would use Physical + STR bonus. Dodging a falling rock is 
 
 ## Combat
 
-When entering combat, the pace of the game shifts from the free-form nature of exploration to tightly structured units of time called 'rounds', in which each character gets one turn. On their turn, characters may move up to their maximum speed and take one additional action (attack, use a program, move again, speak with someone, etc.), unless they are immobilized, unconscious, or otherwise incapacitated.
+When entering combat, the pace of the game shifts from the free-form nature of exploration to tightly structured units of time called 'rounds', in which each character gets one turn. On their turn, characters may move up to their maximum speed and take one additional action (attack, use a program, move again, speak with someone, etc.), unless they are immobilized, stunned, unconscious, or otherwise incapacitated.
 
 The order in which characters take their turns in combat is determined by rolling d20 + DEX bonus for **initiative** at the start of each round (ties are settled with a re-roll).
 
@@ -138,21 +158,52 @@ When all characters (including Gamemaster's characters) have taken their turn, t
 
 ### Attacking
 
-When making an attack, roll a d20, adding the appropriate **attack bonus** for the action. If the resulting total is greater than your opponent's Armor Class (AC), it's a hit. Rolling a 20 on the die (Natural 20) is an automatic hit, dealing additional damage equal to your weapon's maximum damage. Rolling a 1 on the die (Natural 1) is an automatic fail, dealing no damage regardless of the attack bonus.
+<div class="float-right pull-up t-full">
 
-**Melee attack bonus** = STR bonus + Physical Skill
+**Attack Difficulty Modifiers**
 
-**Ranged attack bonus** = DEX bonus + Accuracy Skill
+| Situation 					| Attack DC
+| :-------- 					| :-------
+| Target Sleeping / Unconscious	| -5
+| Target Unaware				| -2
+| Target Distracted / In Combat	| -1
+| Target In Light Cover			| +2
+| Target In Heavy Cover			| +5
 
-If the total attack bonus is +5 or more, the character can 'split' their attack by adding a -5 penalty to the attack bonus for each extra attack made, until the attack bonus is less than 5. For example, if the total bonus is +12, the character can make two attacks at +7, or three attacks at +2.
+**Size Difficulty Modifiers**
 
-Characters using Light melee weapons may use their DEX bonus instead of their STR bonus for making attacks; likewise, characters wielding Heavy ranged weapons may use their STR bonus instead of DEX bonus. Mercenaries, Assassins and Rangers may wield 2 Light weapons and attack with both in a round, if they take a -2 penalty on all attack rolls that round.
+| Size							| Attack Bonus
+| :---							| :-------
+| Colossal (>50 ft.)			| +5
+| Giant (20-50 ft.)				| +3
+| Large (10-20 ft.)				| +1
+| Normal (3-10 ft.)				| ±0
+| Small (1-3 ft.)				| -1
+| Tiny (0.2-1 ft.)				| -3
+| Miniscule (<0.2 ft.)			| -5
 
-For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. If your character is wielding a Heavy melee weapon, add your STR bonus to the weapon's damage total; likewise, add your character's DEX bonus if you are wielding a Light melee weapon.
+</div>
 
-**Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10 and add your DEX bonus of 3, getting a total of 11. The damage is enough to finish off the Human for good, so you lower your weapon and combat ends.
+When making an attack in combat, the character rolls a d20, adding the appropriate **Attack Bonus** for the action. If the resulting total is greater than the the target's **Armor Class** (AC) plus any modifiers, it's a hit.
 
-<!-- TODO: aiming, called shots, stun -->
+**Melee Attack Bonus** = STR bonus + Physical Skill + Modifiers
+**Ranged Attack Bonus** = DEX bonus + Accuracy Skill + Modifiers
+
+The **Attack Bonus** is modified by a few actions. If a character is attacking something of a different size, add the difference between the character's size and the target's size to the attack bonus.
+
+A character can decide to **Aim**, which consumes their action for the current round and increases their attack bonus by +5 if they immediately make an attack the next round.
+
+**Example:** A Small sized character is shooting at a Large sized shipping container. The difference between Small and Large is +2, and they also chose to Aim the previous round, so they receive +7 to their attack bonus.
+
+Rolling a 20 on the die (Natural 20) is an automatic hit, dealing additional damage equal to your weapon's maximum damage. Rolling a 1 on the die (Natural 1) is an automatic fail, dealing no damage regardless of the attack bonus.
+
+If the total attack bonus is +5 or more, the character can 'split' their attack by subtracting 5 from the attack bonus for each extra attack made. An attack may be 'split' up to three times, and the resulting attack bonus must never drop below 0. For example, if the total bonus is +12, the character can make one attack at +12, two attacks at +7, or three attacks at +2.
+
+Characters may use their DEX bonus with Light melee weapons, and their STR bonus with Heavy ranged weapons. Mercenaries, Assassins, and Rangers may wield 2 Light weapons and attack with both in a round, if they take a -2 penalty to their attack bonus.
+
+For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. If your character is wielding a Heavy melee weapon, add your STR bonus to the weapon's damage total.
+
+**Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10, getting a 9. The damage is enough to finish off the Human for good, so you lower your weapon and combat ends.
 
 ### Defending
 
@@ -161,25 +212,6 @@ On their turn, a character may choose to actively defend themselves. This is an 
 If an enemy attacks your character while you are defending and misses, you get a chance to make a counterattack. A counterattack is handled like a regular single attack, but the attack bonus is calculated as if you were making the maximum number of attacks that turn - you use the lowest possible attack bonus for the attack.
 
 **Example:** You are fighting a rogue combat android. You elect to defend on your turn, rolling 1d10 and raising your AC to 19. The android takes a swing at you, and misses slightly. You counterattack by firing your pistol at the android's core - you normally have a +7 attack bonus, so the counterattack is made with a +2 attack bonus. Your roll of 17 is enough to overcome the android's defenses, and you proceed to roll damage normally.
-
-<div class="page-break-after"></div>
-
-## Level Advancement
-
-Characters gain XP (or Experience Points) from defeating enemies, disarming traps, or from handling situations in innovative ways, at the GM's discretion. XP is awarded to all characters who take part in the encounter.
-
-**XP Gained** = Hit Dice of defeated enemies, or the given XP for the trap, situation, etc. Add +1 for each doubling of the number of foes.
-
-As characters participate in encounters, they will begin to accumulate XP. Characters advance to the next level when they have gained XP equal to 10 times their current level. After advancing, the total XP is reset to 0. If a character has more XP than is required for the next level, keep the excess XP and add it after resetting the character's XP to 0.
-
-For example, if a level 1 character has 8XP and is awarded 4XP, the character advances to level 2 with 2XP.
-
-Each level adds:
-
-* +1d6 to Hit Points (with a minimum of 3). Mercenaries also get additional HP equal to their STR bonus.
-* +2 points to spend on skills. When upgrading skills, you cannot add more points to a skill if it is higher than or equal to your character's level + 5.
-* If your character's level divides by three (ex: level 3,6,9,etc.) add 1 point to STR, DEX or MIND.
-* New program slots and power levels are unlocked at levels 2,4,6,8,etc.
 
 ## Programs
 
@@ -193,7 +225,7 @@ Casting a Program is simple - players subtract the HP cost of the Program and ro
 
 **Program Bonus** = MIND bonus + Knowledge skill + Deck bonus.
 
-Some programs allow making additional attacks, similar to normal combat. For each addition attack made, subtract 5 from the Program bonus. The new bonus applies to all attacks made that turn, and the bonus cannot be brought below 0.
+Some programs allow making additional attacks, similar to normal combat. For each additional attack made, subtract 5 from the Program bonus. The new bonus applies to all attacks made that turn, and the bonus cannot be brought below 0.
 
 Programs are often used to interact with Grid-connected objects in the world. These objects are known as _devices_, and can be anything - a security camera, a locked door, a data cache, or even a guard's cybernetic implant. All devices have a metric of how difficult it is to interact with them, called _security_, that affects a program's casting DC. The levels of security, in order of difficulty, are:
 
@@ -226,6 +258,31 @@ The outcome of a Psion's use of an power is determined by rolling 1d20 and addin
 **Psionic Bonus** = MIND Bonus + Knowledge skill.
 
 After using a Psionic ability, Psions are in a state known as Psionic Interference, rendering them unable to heal, much like characters using Decks. This state fades when the character takes a short rest.
+
+## Level Advancement
+
+Characters gain XP (or Experience Points) from defeating enemies, disarming traps, or from handling situations in innovative ways, at the GM's discretion. XP is awarded to all characters who take part in the encounter.
+
+**XP Gained** = Hit Dice of defeated enemies, or the given XP for the trap, situation, etc. Add +1 for each doubling of the number of foes.
+
+As characters participate in encounters, they will begin to accumulate XP. Characters advance to the next level when they have gained XP equal to 10 times their current level. This XP is subtracted from the character's XP pool, and any excess XP is applied towards the next level.
+
+Each level adds:
+
+* +1d6 to Hit Points (with a minimum of 3). Mercenaries also get additional HP equal to their STR bonus.
+* +2 points to spend on skills. When upgrading skills, you cannot add more points to a skill if it is higher than or equal to your character's level + 5.
+* If your character's level divides by three (e.g. level 3, 6, 9, etc.) you gain one point to spend on stats.
+* New program slots and power levels are unlocked at levels 2, 4, 6, 8, etc.
+
+When your character gains a level, you can use unallocated Skill Points to gain or improve Traits and reduce or remove Quirks, with the Gamemaster's approval. The cost for doing such an action is equal to the cost to purchase the appropriate level of a Trait, as detailed in the Traits and Quirks section.
+
+**Example:** Your character has a -2 DEX quirk regarding snakes. You spend a Skill Point to reduce the effect of the Quirk by 1, bringing it to -1.
+
+You may also gain Traits or Quirks for special actions (or particularly good role-playing) during an adventure. These are awarded at the end of an adventure, and are free, but are decided at the whims of the Gamemaster. This can be a delicate subject, so you and your Gamemaster should discuss any potential Traits or Quirks before applying anything.
+
+**Example:** You came up with a particularly inventive way to overcome your fear of snakes to save the party at a critical moment in the last adventure. The Gamemaster decides that counts as special action and excellent role-playing, so he awards you a +1 Damage Trait verus snakes.
+
+<div class="page-break-after"></div>
 
 ## Resting & Recuperating
 

@@ -1,4 +1,4 @@
-<!-- $header Microluxe 20 Space <br> <br> Character Abilities <br> & Programs -->
+<!-- $header Character Abilities <br> & Programs -->
 
 # Character Abilities
 

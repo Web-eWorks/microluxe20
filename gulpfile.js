@@ -12,6 +12,7 @@ const config = {
   dataPath: 'src/data/',
   mdPath: 'src/markdown/*.md',
   cssPath: 'src/styles/main.css',
+  paperFormat: 'Letter',
   out: 'documents',
   readme: 'README.md',
   includeHeaders: true,
@@ -47,17 +48,17 @@ function replaceData(directive) {
   const columns = doc.columns || 1;
   for (const h of doc.header) header += `| ${`${h} | `.repeat(columns - 1)}${h}\n`;
 
-  const size = doc.data.length / columns;
-  const extra = Math.round((size - Math.floor(size)) * columns);
+  const size = Math.floor(doc.data.length / columns);
+  const extra = doc.data.length % columns;
 
   // Stack table entries side-by-side.
-  for (let i = 0; i < Math.ceil(size); i++) {
+  for (let i = 0; extra ? i <= size : i < size; i++) {
     let d = '| ';
-    for (let c = 0; c < columns; c++) {
-      const offset = extra > 0 ? c : 0;
-      const idx = i + offset + (c * Math.floor(size));
+    for (let c = 0; c < columns && (i < size || c < extra); c++) {
+      const offset = c ? extra : 0;
+      const idx = i + offset + c * size;
       if (idx >= doc.data.length) break;
-      d += (c > 0 ? ' | ' : '') + doc.data[idx];
+      d += (c ? ' | ' : '') + doc.data[idx];
     }
     body += `${d}\n`;
   }
@@ -67,7 +68,7 @@ function replaceData(directive) {
 
 function replaceHeader(extraData, keep) {
   const imgUrl = 'https://github.com/kgrubb/microluxe20/raw/master/src/static/logo-plain.png';
-  return keep ? `![title-img](${imgUrl})\n<h1 class="title">${extraData}</h1>` : '';
+  return keep ? `![title-img](${imgUrl})\n<h1 class="title"> Microluxe 20 Space <br> <br> ${extraData} </h1>` : '';
 }
 
 // Transform markdown document by parsing and including data tables.
@@ -99,6 +100,7 @@ gulp.task('compile', () => {
     .pipe(markdownpdf({
       cwd,
       cssPath: config.cssPath,
+      paperFormat: config.paperFormat,
       preProcessMd: () => through.obj(preProcessMd),
     }))
     .pipe(gulp.dest(config.out));
