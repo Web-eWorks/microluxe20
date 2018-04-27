@@ -40,9 +40,7 @@ If you want to get more complicated, it is recommended that you create a short h
 
 The Terador Council counts many races amongst its members, each with their own culture and history. The so-called 'Mir' are the most common race, with Humans coming in at second place. Most other member races are smaller, content with one or two systems to call their own.
 
-When creating a character, you will be one of the member races of the Terador Council.
-
-<!-- $data races.yml races -->
+<!-- $data handbook.yml races -->
 
 ## Classes
 
@@ -61,6 +59,8 @@ Classes define your character's way of life. Your character's class helps shape 
 **Decker:** Rulers of the Grid, Deckers are nigh-omniscient anywhere there's an unsecured network. They may use Light weapons and armor, and can use all types of Programs. They start with 5 Program slots, a basic Deck implant, and Decker programs.
 
 **Psion:** Strange quirks of nature, Psions can twist and warp the very fabric of reality. Psions may only use Light weapons and armor, and can use Psionic Abilities.
+
+<!-- $page-break -->
 
 ## Stats & Saves
 
@@ -114,22 +114,13 @@ Stats damaged directly or while downed will return to their normal levels after 
 
 Some weapons do Stun damage; this damage is resolved as normal, but is not subtracted from the character's HP. Instead, the character is stunned and unable to act for a number of rounds equal to the damage rolled. If a character is stunned, they must make a MIND+Physical check against `DC 15 + Rounds of Stun Remaining` to attempt to regain lucidity before the stun effect wears off.
 
-**Speed** comes in 3 tiers. You are either Slow(20ft.), Normal(30ft.) or Fast(35ft.). Speed is determined by the game master and can be affected by equipment and conditions. Typically, Mercenaries or Officers with Heavy armor are Slow, Assassins and Rangers are Fast, and the rest are Normal speed.
+**Speed** comes in 3 tiers and determines how far a character can move in a round. A character is either Slow(20ft.), Normal(30ft.) or Fast(35ft.). Speed is determined by the game master and can be affected by equipment and conditions. Typically, Mercenaries or Officers with Heavy armor are Slow, Assassins and Rangers are Fast, and the rest are Normal speed.
 
 **Armor Class (AC):** A character's Armor Class represents their ability to evade or block physical attacks. A character's Armor Class is determined with the formula `10 + DEX bonus + Armor bonus`.
 
 ## Traits and Quirks
 
-<div class="float-right t-full">
-
-| Roll	 		| Cost
-| :----- 		| :---
-| Stat 			| 3
-| Damage		| 2
-| Skill			| 2
-| Stat + Skill	| 1
-
-</div>
+<!-- $data handbook.yml quirks float-right -->
 
 Traits and Quirks are ways to fully bring your character's story into the game. To create a Trait or Quirk, you pick a topic – like snakes, or spaceships – and a specific type of roll that it will apply to. The more specific the roll, the less the Trait or Quirk will cost. Then you determine how much that roll should be increased or penalized. If it is increased you have a Trait, if it's decreased you have a Quirk.
 
@@ -143,7 +134,9 @@ Traits and Quirks are not static. As your character gets more experienced, you c
 
 ## Cybernetics
 
-**TODO:** write up rules for cybernetics: slots, limits, bonuses, etc.
+Cybernetic Implants (or Cybernetics) are mechanical devices that are surgically implanted to replace or augment a specific body part or function. They are similar to Traits and Quirks in that their primary function is to improve a stat or skill, but they have a few major differences. Cybernetics are purchased with Credits instead of Skill Points, they can do much more than boost a stat, and they are subject to malfunction on occasion.
+
+Characters can purchase Cybernetics with their starting funds, or can have them installed at a later date. For details on designing, installing, and using cybernetics, see the Equipment section.
 
 # Gameplay
 
@@ -161,25 +154,11 @@ When all characters (including Gamemaster's characters) have taken their turn, t
 
 **Attack Difficulty Modifiers**
 
-| Situation 					| Attack DC
-| :-------- 					| :-------
-| Target Sleeping / Unconscious	| -5
-| Target Unaware				| -2
-| Target Distracted / In Combat	| -1
-| Target In Light Cover			| +2
-| Target In Heavy Cover			| +5
+<!-- $data handbook.yml target-state -->
 
 **Size Difficulty Modifiers**
 
-| Size							| Attack Bonus
-| :---							| :-------
-| Colossal (>50 ft.)			| +5
-| Giant (20-50 ft.)				| +3
-| Large (10-20 ft.)				| +1
-| Normal (3-10 ft.)				| ±0
-| Small (1-3 ft.)				| -1
-| Tiny (0.2-1 ft.)				| -3
-| Miniscule (<0.2 ft.)			| -5
+<!-- $data handbook.yml target-size -->
 
 </div>
 
@@ -228,11 +207,13 @@ Some programs allow making additional attacks, similar to normal combat. For eac
 
 Programs are often used to interact with Grid-connected objects in the world. These objects are known as _devices_, and can be anything - a security camera, a locked door, a data cache, or even a guard's cybernetic implant. All devices have a metric of how difficult it is to interact with them, called _security_, that affects a program's casting DC. The levels of security, in order of difficulty, are:
 
-- **None:** A completely unsecured device, just open for the taking. Program difficulty: -3.
-- **Basic:** Using only the most rudimentary of security measures, these devices require at least a little skill to overcome. Program difficulty: +0.
-- **Good:** Secured with fairly standard measures, devices with Good security are fairly difficult to hack. Program difficulty: +5.
-- **Excellent:** Using cutting-edge security measures and techniques, these devices are normally used in major infrastructure and corporate security. Program difficulty: +10.
-- **Perfect:** So secure the world does't even know about it, Perfect security is almost never utilized on anything outside of official Terador Council systems. Program difficulty: +15.
+<!-- $data handbook.yml program-difficulty float-right -->
+
+- **None:** A completely unsecured device, just open for the taking.
+- **Basic:** Using only the most rudimentary of security measures, these devices require at least a little skill to overcome.
+- **Good:** Secured with fairly standard measures, Good security is fairly difficult to hack.
+- **Excellent:** Using cutting-edge security measures and techniques, these devices are normally used in major infrastructure and corporate security.
+- **Perfect:** So secure the world does't even know about it, Perfect security is almost never utilized on anything outside of official Terador Council systems.
 
 When casting Programs, the efficiency of the Program can be increased in several ways by spending extra HP. The most common ways are listed here:
 
@@ -240,7 +221,7 @@ When casting Programs, the efficiency of the Program can be increased in several
 - **Expanding:** Make a Program's area of effect 50% larger. Single-target programs can affect multiple targets for 1/2 the program's cost. _Cost:_ 4 HP.
 - **Empowering:** Makes a Program deal twice as much damage or be twice as effective. _Cost:_ 6 HP.
 
-<div class="page-break-after"></div>
+<!-- $page-break -->
 
 ## Psionics
 
@@ -281,7 +262,7 @@ You may also gain Traits or Quirks for special actions (or particularly good rol
 
 **Example:** You came up with a particularly inventive way to overcome your fear of snakes to save the party at a critical moment in the last adventure. The Gamemaster decides that counts as special action and excellent role-playing, so he awards you a +1 Damage Trait verus snakes.
 
-<div class="page-break-after"></div>
+<!-- $page-break -->
 
 ## Resting & Recuperating
 

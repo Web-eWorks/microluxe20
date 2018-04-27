@@ -4,7 +4,7 @@
 
 <!-- TODO: driving rules -->
 
-## Creating Ground Vehicles
+# Creating Ground Vehicles
 
 <!-- TODO: vehicle creation rules -->
 
@@ -12,6 +12,6 @@
 
 <!-- TODO: space/atmo flight rules: piloting, gunnery, sensors, etc. -->
 
-## Creating a Spaceship
+# Creating a Spaceship
 
 <!-- TODO: spaceship creation rules -->

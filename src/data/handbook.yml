@@ -1,0 +1,70 @@
+---
+id: races
+columns: 3
+header:
+    - Race | Bonus
+    - :--- | :---
+data:
+    - "**Human**    | +1 Stat, +1 Skill"
+    - "**Synth**    | +2 MIND, -1 STR, +1 Skill"
+    - "**Elvir**    | +2 DEX"
+    - "**Tauremir** | +2 STR"
+    - "**Dwarmir**  | +1 STR, +1 DEX"
+    - "**Suurmir**  | +1 STR, +1 MIND"
+    - "**Felemir**  | +1 DEX, +1 MIND"
+    - "**Orkeir**   | +3 STR, -1 MIND"
+    - "**Dracomir** | +3 STR, -1 DEX"
+    - "**Xindai'n** | +2 DEX, +1 MIND, -1 STR"
+
+---
+id: quirks
+columns: 1
+header:
+    - "Roll Type | Cost"
+    - ":-------- | :---"
+data:
+    - "Stat         | 3"
+    - "Damage       | 2"
+    - "Skill        | 2"
+    - "Stat + Skill | 1"
+
+---
+id: target-state
+columns: 1
+header:
+    - "Situation | Attack DC"
+    - ":-------- | :--------"
+data:
+    - "Target Sleeping / Unconscious    | -5"
+    - "Target Unaware                   | -2"
+    - "Target Distracted / In Combat	| -1"
+    - "Target In Light Cover			| +2"
+    - "Target In Heavy Cover			| +5"
+
+---
+id: target-size
+columns: 1
+header:
+    - "Size | Attack Bonus"
+    - ":--- | :-----------"
+data:
+    - "Colossal (>50 ft.)	| +5"
+    - "Giant (20-50 ft.)	| +3"
+    - "Large (10-20 ft.)    | +1"
+    - "Normal (3-10 ft.)	| ±0"
+    - "Small (1-3 ft.)		| -1"
+    - "Tiny (0.2-1 ft.)		| -3"
+    - "Miniscule (<0.2 ft.)	| -5"
+
+---
+id: program-difficulty
+columns: 1
+header:
+    - "Security | Difficulty"
+    - ":------- | :---------"
+data:
+    - "None | -3"
+    - "Basic | 0"
+    - "Good | +5"
+    - "Excellent | +10"
+    - "Perfect | +15"

@@ -13,9 +13,11 @@ const config = {
   dataPath: 'src/data/*.{yml,yaml}',
   mdPath: 'src/markdown/*.md',
   cssPath: 'src/styles/main.css',
-  paperFormat: 'Letter',
   out: 'documents',
+  paperFormat: 'Letter',
+
   readme: 'README.md',
+  headerText: 'Microluxe 20 Space <br> <br>',
   includeHeaders: true,
 };
 
@@ -23,20 +25,20 @@ let dataFiles = {};
 
 // Parse the directive: !data <file> [key]
 function replaceData(directive) {
-  const matches = directive.match(/(\S+)\s*(\S+)/);
+  const matches = directive.match(/(\S+)/g);
   if (matches === null) return '';
 
-  const file = dataFiles[matches[1]];
+  const file = dataFiles[matches[0]];
   if (file === undefined) {
-    console.log(`No such file ${matches[1]}.`);
+    console.log(`No such file ${matches[0]}.`);
     return '';
   }
 
   // Get the table YAML document matching the key, or the first if no key.
   let doc;
-  for (const d of file) if (d.id === matches[2]) doc = d;
+  for (const d of file) if (d.id === matches[1]) doc = d;
   if (doc === undefined) {
-    console.log(`No such table ${matches[2]} in file ${matches[1]}.`);
+    console.log(`No such table ${matches[1]} in file ${matches[0]}.`);
     return '';
   }
 
@@ -62,12 +64,18 @@ function replaceData(directive) {
     body += `${d}\n`;
   }
 
-  return header + body;
+  const out = header + body;
+
+  if (matches.length > 2) {
+    return `<div class="${matches.slice(2).join(' ')}">\n\n${out}\n\n</div>`;
+  }
+
+  return out;
 }
 
 function replaceHeader(extraData, keep) {
   const imgUrl = 'https://github.com/kgrubb/microluxe20/raw/master/src/static/logo-plain.png';
-  return keep ? `![title-img](${imgUrl})\n<h1 class="title"> Microluxe 20 Space <br> <br> ${extraData} </h1>` : '';
+  return keep ? `![title-img](${imgUrl})\n<h1 class="title"> ${config.headerText} ${extraData} </h1>` : '';
 }
 
 // Transform markdown document by parsing and including data tables.
@@ -79,6 +87,7 @@ function preProcessMd(data, e, cb) {
     if (name === 'data') return replaceData(extraData);
     if (name === 'header') return replaceHeader(extraData, config.includeHeaders);
     if (name === 'header-main') return replaceHeader(extraData, true);
+    if (name === 'page-break') return '<div class="page-break-after"></div>';
     return '';
   }
 

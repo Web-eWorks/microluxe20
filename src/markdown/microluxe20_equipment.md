@@ -22,6 +22,10 @@ Credits are stored on Credsticks – passively-powered, biometrically-protected 
 
 You begin with a certain amount of acquired credits, as determined by your character class.
 
+## Cybernetics
+
+**TODO:** write up rules for cybernetics: slots, limits, bonuses, etc.
+
 ## Weapons
 
 Here is the format for weapon entries (given as column headings on the table below):
