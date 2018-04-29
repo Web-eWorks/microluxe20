@@ -64,10 +64,10 @@ function replaceData(directive) {
     body += `${d}\n`;
   }
 
-  const out = header + body;
+  const out = `\n${header}${body}\n`;
 
   if (matches.length > 2) {
-    return `<div class="${matches.slice(2).join(' ')}">\n\n${out}\n\n</div>`;
+    return `<div class="${matches.slice(2).join(' ')}">\n${out}\n</div>`;
   }
 
   return out;

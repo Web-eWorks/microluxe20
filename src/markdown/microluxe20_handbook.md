@@ -153,11 +153,9 @@ When all characters (including Gamemaster's characters) have taken their turn, t
 <div class="float-right pull-up t-full">
 
 **Attack Difficulty Modifiers**
-
 <!-- $data handbook.yml target-state -->
 
 **Size Difficulty Modifiers**
-
 <!-- $data handbook.yml target-size -->
 
 </div>
@@ -256,7 +254,7 @@ Each level adds:
 
 When your character gains a level, you can use unallocated Skill Points to gain or improve Traits and reduce or remove Quirks, with the Gamemaster's approval. The cost for doing such an action is equal to the cost to purchase the appropriate level of a Trait, as detailed in the Traits and Quirks section.
 
-**Example:** Your character has a -2 DEX quirk regarding snakes. You spend a Skill Point to reduce the effect of the Quirk by 1, bringing it to -1.
+**Example:** Your character has a -2 DEX quirk regarding snakes. You spent some time during your last adventure trying to reduce your fear of snakes, so the Gamemaster lets you spend a Skill Point to reduce the effect of the Quirk by 1, bringing it to -1.
 
 You may also gain Traits or Quirks for special actions (or particularly good role-playing) during an adventure. These are awarded at the end of an adventure, and are free, but are decided at the whims of the Gamemaster. This can be a delicate subject, so you and your Gamemaster should discuss any potential Traits or Quirks before applying anything.
 

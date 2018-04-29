@@ -1,4 +1,4 @@
-<!-- $header Equipment Tables -->
+<!-- $header Equipment -->
 
 # Equipment
 

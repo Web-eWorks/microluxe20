@@ -1,0 +1,69 @@
+---
+id: damage-levels
+columns: 1
+header:
+    - "Damage Level | Amount"
+    - ":----------- | :-----"
+data:
+    - "Undamaged    | 0"
+    - "Very Light   | 1-5"
+    - "Light        | 6-10"
+    - "Moderate     | 11-20"
+    - "Severe       | 21-30"
+    - "Extreme      | 31-40"
+    - "Destroyed    | 40+"
+
+---
+id: vehicle-size
+columns: 1
+header:
+    - "Class | Size | Bonus"
+    - ":---- | :--- | :----"
+data:
+    - "S0 | Small (4-10 ft.)	| +0"
+    - "S1 | Normal (10-30 ft.)	| +2"
+    - "S2 | Large (30-50 ft.)   | +4"
+    - "S3 | Huge (50-150 ft.)   | +6"
+    - "S4 | Giant (150-500 ft.)	| +8"
+    - "S5 | Colossal (>500 ft.)	| +10"
+
+---
+id: situation
+columns: 1
+header:
+    - "Situation | Mod."
+    - ":-------- | :---"
+data:
+    - "Easy         | +0"
+    - "Moderate     | +5"
+    - "Rough        | +10"
+    - "Very Rough   | +15"
+    - "Hazardous    | +20"
+
+---
+id: move-mode
+columns: 1
+header:
+    - "Movement | Speed | Diff."
+    - ":------- | :---- | :----"
+data:
+    - "Stopped  | —     | —"
+    - "Cautious | 1/2   | 0"
+    - "Normal   | 1     | 0"
+    - "Cruising | 2     | 5"
+    - "Emergency| 4     | 10"
+
+---
+id: vehicle-stunts
+columns: 1
+header:
+    - "Stunt | Mod."
+    - ":---- | :---"
+data:
+    - "Parking (Ground)         | +5"
+    - "Landing (Air)            | +10"
+    - "Sideswiping / Ramming    | +10"
+    - "Slow Turn                | +5"
+    - "Fast Turn (45+ degrees)  | +10"
+    - "Tight Turn (90+ degrees) | +15"
+    - "Hairpin Turn (180 degrees) | +20"

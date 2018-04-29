@@ -103,6 +103,14 @@ body {
     margin-top: -4em;
 }
 
+.pull-up-sm {
+    margin-top: -1em;
+}
+
+.clear {
+    clear: both;
+}
+
 ul, ol, li, strong, em {
     font-size: 100%;
 }
