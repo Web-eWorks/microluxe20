@@ -49,7 +49,7 @@ Whenever the players want to try something that goes around, through, or above a
 
 Have them roll whatever check seems most appropriate. A roll of 1-10 is a failure, a roll of 11-20 is a success. If you feel that the situation warrants that you favor them, assign a +2 bonus to their roll. If the situation requires that they be hindered, then assign a –2 penalty.
 
-<h2 class="page-break"> Compatibility Notes </h2>
+## Compatibility Notes
 
 ### Using Existing D&D Monsters
 
@@ -233,6 +233,8 @@ Several typical poisons are summarized below. The entries for poisons include th
 
 <!-- $data gm-damage.yml poisons -->
 
+<!-- $page-break -->
+
 ## Traps
 
 <!-- TODO: rework example, update trap list. -->
@@ -247,7 +249,7 @@ The entries for traps include the following information:
 - **Disable DC:** lists the DC for the Guile + DEX check necessary to disarm the trap safely.
 - **Attack:** shows the traps attack bonus or type of effect, and the damage the trap deals.
 
-<h3 class="page-break"> 1 XP Traps </h3>
+### 1 XP Traps
 - **Basic Arrow Trap:** ATK +10 (1d6, arrow); Search know+MIND DC 20, Disable guile+DEX DC 20.
 - **Camouflaged Pit Trap:** 10 ft. deep (1d6, fall); Save DC 15 to avoid; Search DC 24, Disable DC 20.
 - **Poison Dart Trap:** ATK +8 (1d4 plus poison, dart); Search DC 20, Disable DC 18.
@@ -276,6 +278,8 @@ The entries for traps include the following information:
 - **Compacting Room Trap:** walls move together (12d6, crush); Search DC 20, Disable DC 22.
 - **Lightning Bolt Trap:** spell effect (10d6, electricity); Save DC 14 for ½ damage; Search DC 28, Disable DC 28.
 - **Spiked Pit Trap:** 100 ft. deep (10d6, fall), ATK +10 (1d4+5 each, 1d4 spikes); Save DC 20 to avoid; Search DC 20, Disable DC 20.
+
+<!-- $page-break -->
 
 ### 7 XP Traps
 - **Black Tentacles Trap:** spell effect (tentacles) ATK +7 (1d6+4 each, 1d4+7 tentacles); Search DC 29, Disable DC 29.

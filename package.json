@@ -1,6 +1,6 @@
 {
-  "name": "microluxe20",
-  "version": "1.7.4",
+  "name": "microluxe20-space",
+  "version": "1.0.0",
   "description": "A free, open source tabletop game based on the Microlite20 ruleset.",
   "main": "index.js",
   "scripts": {
@@ -11,26 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kgrubb/microluxe20"
+    "url": "https://github.com/web-eworks/microluxe20-space"
   },
-  "author": "Keli Grubb",
+  "author": "Webster Sheets",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/kgrubb/microluxe20/issues"
+    "url": "https://github.com/web-eworks/microluxe20-space/issues"
   },
-  "homepage": "https://microluxe20.com",
   "devDependencies": {
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
+    "gulp-changed-in-place": "^2.3.0",
     "gulp-markdown-pdf": "^6.0.0",
     "gulp-zip": "^4.1.0",
     "js-yaml": "^3.10.0",
     "through2": "^2.0.3"
-  },
-  "dependencies": {
-    "gulp-changed-in-place": "^2.3.0"
   }
 }

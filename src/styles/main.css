@@ -92,31 +92,73 @@ body {
 .float-right {
     float: right;
     margin-left: 1em;
+    max-width: 45%;
 }
 
 .float-left {
     float: left;
     margin-right: 1em;
+    max-width: 45%;
 }
 
 .pull-up {
-    margin-top: -4em;
+    margin-top: -3em;
 }
 
 .pull-up-sm {
     margin-top: -1em;
 }
 
+.flex {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-flex-direction: row;
+}
+
+.flex .obj-block {
+    width: 45%;
+    max-width: 45%;
+}
+
+.obj-block {
+    border: 1px solid black;
+    border-radius: 5px;
+	background-color: #e0e4ec;
+	padding: 0.8em 1em;
+    margin-bottom: 0.9em;
+    page-break-inside: avoid;
+}
+
+.obj-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.obj-block p + ul, .obj-block p + ol {
+    /*margin-top: -0.5em;*/
+}
+
+li > ul {
+    margin-bottom: 0.1em;
+}
+
+.obj-block .lead > strong {
+    font-size: 1.2em;
+}
+
+.obj-block .lead > span {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
 .clear {
     clear: both;
 }
 
-ul, ol, li, strong, em {
-    font-size: 100%;
-}
-
-table {
-    margin: 0;
+p, ul, ol, table {
+    margin-top: 0;
+    margin-bottom: 0.9em;
 }
 
 .t-full table {
@@ -133,6 +175,8 @@ table, td {
 }
 
 ul, ol {
+    /*margin-top: 0;
+    margin-bottom: 0.9em;*/
     padding-left: 1.6em;
 }
 

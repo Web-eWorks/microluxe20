@@ -5,7 +5,6 @@ header:
     - "Damage Level | Amount"
     - ":----------- | :-----"
 data:
-    - "Undamaged    | 0"
     - "Very Light   | 1-5"
     - "Light        | 6-10"
     - "Moderate     | 11-20"
@@ -48,10 +47,10 @@ header:
     - ":------- | :---- | :----"
 data:
     - "Stopped  | —     | —"
-    - "Cautious | 1/2   | 0"
-    - "Normal   | 1     | 0"
-    - "Cruising | 2     | 5"
-    - "Emergency| 4     | 10"
+    - "Cautious | 1/2x  | 0"
+    - "Normal   | 1x    | 0"
+    - "Cruising | 2x    | 5"
+    - "Emergency| 4x    | 10"
 
 ---
 id: vehicle-stunts
@@ -61,9 +60,20 @@ header:
     - ":---- | :---"
 data:
     - "Parking (Ground)         | +5"
-    - "Landing (Air)            | +10"
+    - "Landing (Aircraft)       | +10"
     - "Sideswiping / Ramming    | +10"
     - "Slow Turn                | +5"
     - "Fast Turn (45+ degrees)  | +10"
     - "Tight Turn (90+ degrees) | +15"
-    - "Hairpin Turn (180 degrees) | +20"
+
+---
+id: ram-speed
+columns: 1
+header:
+    - "Speed | Damage"
+    - ":---- | :-----"
+data:
+    - "Cautious | Light"
+    - "Normal | Moderate"
+    - "Cruising | Severe"
+    - "Emergency | Extreme"

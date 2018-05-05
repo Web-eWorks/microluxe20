@@ -80,7 +80,7 @@ For compatibility purposes, the 3 saves in Microluxe20 (STR save, DEX save, and 
 
 ## Skills
 
-There are 5 skills all characters have in common.
+There are 5 skills all characters have in common:
 
 - **Physical:** The character's ability in hand-to-hand combat and their instinctual knowledge of applying their own bodily force to a problem.
 - **Accuracy:** The character's ability to hit a specific target, applied to anything from a stone to a gunship turret.
@@ -88,13 +88,13 @@ There are 5 skills all characters have in common.
 - **Knowledge:** The character's wealth of accumulated information and their understanding of how to apply it.
 - **Communication:** The character's ability to effectively command others, talk their way out of (or into) a sticky situation, and their ability to tell if others are lying or withholding information.
 
-When creating a character, you get 3 skill points to allocate how you wish.
-
-When making a skill roll, add the relevant Stat Bonus to the skill value and roll 1d20. If the result is equal to or higher than than the given Difficulty Class, the roll has succeeded.
+When creating a character, you get 3 skill points to allocate as you wish.
 
 **Skill Value** = any bonus due to your class or race + any allocated points.
 
 **Skill Roll** = d20 + skill value + stat bonus + situation modifiers
+
+When making a skill roll, add the relevant Stat Bonus to the skill value and roll 1d20. If the result is equal to or higher than than the given Difficulty Class, the roll has succeeded.
 
 For example, Climbing would use Physical + STR bonus. Dodging a falling rock is Physical + DEX bonus. Finding a trap is Cunning + MIND bonus. Disabling a trap is Cunning + DEX bonus.
 
@@ -134,7 +134,7 @@ Traits and Quirks are not static. As your character gets more experienced, you c
 
 ## Cybernetics
 
-Cybernetic Implants (or Cybernetics) are mechanical devices that are surgically implanted to replace or augment a specific body part or function. They are similar to Traits and Quirks in that their primary function is to improve a stat or skill, but they have a few major differences. Cybernetics are purchased with Credits instead of Skill Points, they can do much more than boost a stat, and they are subject to malfunction on occasion.
+Cybernetic Implants (or Cybernetics) are mechanical devices that are surgically implanted to replace or augment a specific body part or function. They are similar to Traits and Quirks in that their primary function is to improve a stat or skill, but they have a few major differences.
 
 Characters can purchase Cybernetics with their starting funds, or can have them installed at a later date. For details on designing, installing, and using cybernetics, see the Equipment section.
 
@@ -150,7 +150,7 @@ When all characters (including Gamemaster's characters) have taken their turn, t
 
 ### Attacking
 
-<div class="float-right pull-up t-full">
+<div class="float-right t-full pull-up">
 
 **Attack Difficulty Modifiers**
 <!-- $data handbook.yml target-state -->
@@ -160,14 +160,14 @@ When all characters (including Gamemaster's characters) have taken their turn, t
 
 </div>
 
-When making an attack in combat, the character rolls a d20, adding the appropriate **Attack Bonus** for the action. If the resulting total is greater than the the target's **Armor Class** (AC) plus any modifiers, it's a hit.
+When making an attack in combat, the character rolls a d20, adding the appropriate Attack Bonus for the action. If the resulting total is greater than the the target's Armor Class (AC) plus any modifiers, it's a hit.
 
 **Melee Attack Bonus** = STR bonus + Physical Skill + Modifiers
 **Ranged Attack Bonus** = DEX bonus + Accuracy Skill + Modifiers
 
-The **Attack Bonus** is modified by a few actions. If a character is attacking something of a different size, add the difference between the character's size and the target's size to the attack bonus.
+The Attack Bonus is modified by a few actions. If a character is attacking something of a different size, add the difference between the character's size and the target's size to the attack bonus.
 
-A character can decide to **Aim**, which consumes their action for the current round and increases their attack bonus by +5 if they immediately make an attack the next round.
+A character can decide to Aim, which consumes their action for the current round and increases their attack bonus by +5 if they immediately make an attack the next round.
 
 **Example:** A Small sized character is shooting at a Large sized shipping container. The difference between Small and Large is +2, and they also chose to Aim the previous round, so they receive +7 to their attack bonus.
 
@@ -187,13 +187,13 @@ On their turn, a character may choose to actively defend themselves. This is an 
 
 If an enemy attacks your character while you are defending and misses, you get a chance to make a counterattack. A counterattack is handled like a regular single attack, but the attack bonus is calculated as if you were making the maximum number of attacks that turn - you use the lowest possible attack bonus for the attack.
 
-**Example:** You are fighting a rogue combat android. You elect to defend on your turn, rolling 1d10 and raising your AC to 19. The android takes a swing at you, and misses slightly. You counterattack by firing your pistol at the android's core - you normally have a +7 attack bonus, so the counterattack is made with a +2 attack bonus. Your roll of 17 is enough to overcome the android's defenses, and you proceed to roll damage normally.
+**Example:** You are fighting a rogue combat android. You elect to defend on your turn, rolling 1d10 and raising your AC to 19. The android takes a swing at you, rolling 18, and misses slightly. You counterattack by firing your pistol at the android's core - you normally have a +7 attack bonus, so the counterattack is made with a +2 attack bonus. Your roll of 17 is enough to overcome the android's defenses, and you proceed to roll damage normally.
 
 ## Programs
 
 Characters with a Deck implant may use Programs, powerful abilities that manipulate the local Grid. Each Deck has a specific bonus used when casting Programs, and a bonus to a character's Program slots. Characters start with a set number of Program slots and gain an additional slot every second level.
 
-The number of Programs a character can have in their Deck is determined by adding the character's Program slots and their Deck's maximum slots. Exchanging Programs between a Deck and storage is a simple action, but must be performed outside of combat due to the delicacy involved.
+The number of Programs a character can have in their Deck is determined by adding the character's Program slots and their Deck's maximum slots. Exchanging Programs between a Deck and a storage device is a simple action, but must be performed outside of combat due to the delicacy involved.
 
 Every program has a cost in Hit Points that must be paid to cast it. Once a character has cast a Program, they are in a state called "Tech Haze" and cannot be healed by item or ability until they take a short rest.
 
@@ -216,10 +216,10 @@ Programs are often used to interact with Grid-connected objects in the world. Th
 When casting Programs, the efficiency of the Program can be increased in several ways by spending extra HP. The most common ways are listed here:
 
 - **Extending:** Makes a Program last twice as long. _Cost:_ 2 HP.
-- **Expanding:** Make a Program's area of effect 50% larger. Single-target programs can affect multiple targets for 1/2 the program's cost. _Cost:_ 4 HP.
+- **Expanding:** Make a Program's area of effect twice as large or affect twice as many targets. _Cost:_ 4 HP.
 - **Empowering:** Makes a Program deal twice as much damage or be twice as effective. _Cost:_ 6 HP.
 
-<!-- $page-break -->
+Programs can have up to 3 effects applied. Effects stack, so a program Extended twice will last four times as long.
 
 ## Psionics
 
@@ -248,7 +248,7 @@ As characters participate in encounters, they will begin to accumulate XP. Chara
 Each level adds:
 
 * +1d6 to Hit Points (with a minimum of 3). Mercenaries also get additional HP equal to their STR bonus.
-* +2 points to spend on skills. When upgrading skills, you cannot add more points to a skill if it is higher than or equal to your character's level + 5.
+* +2 points to spend on skills. When upgrading skills, you cannot add more points to a skill if it is higher than or equal to your character's level + 5. Skills cannot be raised above 15.
 * If your character's level divides by three (e.g. level 3, 6, 9, etc.) you gain one point to spend on stats.
 * New program slots and power levels are unlocked at levels 2, 4, 6, 8, etc.
 

@@ -57,11 +57,12 @@ data:
     - Battle Rifle | 1d12 | 100ft. | 6 | Normal | $610 / $30
 
     - Blaster Rifle | 1d12 | 125ft. | 4 | Heavy | $840 / $35
-    - Auto Shotgun | 2d6 | 35ft. | 8 | Heavy | $910 / $35
-    - Sniper Rifle | 1d12+1 | 150ft. | 5 | Heavy | $970 / $40
-    - Rail Rifle | 2d8 | 80ft. | 3 | Heavy | $1230 / $20
-    - Laser Repeater | 2d8+1 | 120ft. | 8 | Heavy | $1260 / $20
-    - Heavy LMG | 3d6 | 80ft. | 6 | Heavy | $1625 / $80
+    - Auto Shotgun | 2d6+1 | 35ft. | 8 | Heavy | $910 / $35
+    - Sniper Rifle | 1d12+2 | 150ft. | 5 | Heavy | $970 / $40
+    - Ballistic LMG | 2d6+2 | 110ft. | 7 | Heavy | $1125 / $80
+    - Rail Rifle | 2d6+2 | 80ft. | 3 | Heavy | $1230 / $20
+    - Laser Repeater | 2d8 | 120ft. | 8 | Heavy | $1260 / $20
+    - Ballistic HMG | 3d6 | 80ft. | 4 | Heavy | $1625 / $80
 
     # TODO: more guns?
 

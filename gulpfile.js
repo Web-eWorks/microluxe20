@@ -4,34 +4,46 @@ const zip = require('gulp-zip');
 const changed = require('gulp-changed');
 const changedInPlace = require('gulp-changed-in-place');
 const fs = require('fs');
-const path = require('path');
 const pjson = require('./package.json');
 const yaml = require('js-yaml');
 const through = require('through2');
 
 const config = {
-  dataPath: 'src/data/*.{yml,yaml}',
+  dataPath: 'src/data/**/*.{yml,yaml}',
   mdPath: 'src/markdown/*.md',
   cssPath: 'src/styles/main.css',
   out: 'documents',
   paperFormat: 'Letter',
 
+  compiledOut: [
+    ['handbook', 'equipment', 'abilities'],
+    ['vehicles'],
+    ['gm_guide'],
+    ['races'],
+  ],
+
   readme: 'README.md',
   headerText: 'Microluxe 20 Space <br> <br>',
+  imgUrl: 'https://github.com/kgrubb/microluxe20/raw/master/src/static/logo-plain.png',
   includeHeaders: true,
 };
 
-let dataFiles = {};
+const dataFiles = {};
+const dataTransform = [];
 
-// Parse the directive: !data <file> [key]
-function replaceData(directive) {
+/*
+-------------------------------------------------------------------------------
+*/
+
+// Parse a directive <file> <key> into a YAML data object in file[id: key].
+function getDataFile(directive) {
   const matches = directive.match(/(\S+)/g);
-  if (matches === null) return '';
+  if (matches === null) return null;
 
   const file = dataFiles[matches[0]];
   if (file === undefined) {
     console.log(`No such file ${matches[0]}.`);
-    return '';
+    return null;
   }
 
   // Get the table YAML document matching the key, or the first if no key.
@@ -39,15 +51,36 @@ function replaceData(directive) {
   for (const d of file) if (d.id === matches[1]) doc = d;
   if (doc === undefined) {
     console.log(`No such table ${matches[1]} in file ${matches[0]}.`);
+    return null;
+  }
+
+  return [doc, matches];
+}
+
+// Transform markdown document by parsing and including data tables.
+function preProcessMd(data) {
+  // Scan for HTML comments with a directive, e.g. <!-- $data -->.
+  const regex = /<!--\s*\$(\S+)\s*([\S\s]*?)\s*-->/g;
+
+  function replace(match, name, extraData) {
+    for (const d of dataTransform) {
+      if ((name === d.key) || (d.allowExtra && name.startsWith(d.key))) {
+        return d.replace(extraData, name) || '';
+      }
+    }
     return '';
   }
 
+  return data.replace(regex, replace);
+}
+
+function assembleTable(doc) {
   // Convert it into markdown, optionally combining multiple columns.
   let header = '';
   let body = '';
 
   const columns = doc.columns || 1;
-  for (const h of doc.header) header += `| ${`${h} | `.repeat(columns - 1)}${h}\n`;
+  for (const h of doc.header) header += `| ${`${h} | `.repeat(columns - 1)}${h} |\n`;
 
   const size = Math.floor(doc.data.length / columns);
   const extra = doc.data.length % columns;
@@ -57,73 +90,168 @@ function replaceData(directive) {
     let d = '| ';
     for (let c = 0; c < columns && (i < size || c < extra); c++) {
       const offset = c ? extra : 0;
-      const idx = i + offset + c * size;
+      const idx = i + offset + (c * size);
       if (idx >= doc.data.length) break;
       d += (c ? ' | ' : '') + doc.data[idx];
     }
-    body += `${d}\n`;
+    body += `${d} |\n`;
   }
 
-  const out = `\n${header}${body}\n`;
-
-  if (matches.length > 2) {
-    return `<div class="${matches.slice(2).join(' ')}">\n${out}\n</div>`;
-  }
-
-  return out;
+  return `\n${header}${body}\n`;
 }
+
+/*
+TODO: move this to separate files (make more extensible).
+-------------------------------------------------------------------------------
+*/
+
+dataTransform.push({
+  key: 'data',
+  // Parse the directive: $data <file> <key>
+  /* eslint no-restricted-syntax: "off", no-plusplus: "off" */
+  replace: (directive) => {
+    const file = getDataFile(directive);
+    if (file === null) return '';
+    const [doc, matches] = file;
+
+    const out = assembleTable(doc);
+    if (matches.length > 2) {
+      return `<div class="${matches.slice(2).join(' ')}">\n${out}\n</div>`;
+    }
+
+    return out;
+  },
+});
 
 function replaceHeader(extraData, keep) {
-  const imgUrl = 'https://github.com/kgrubb/microluxe20/raw/master/src/static/logo-plain.png';
-  return keep ? `![title-img](${imgUrl})\n<h1 class="title"> ${config.headerText} ${extraData} </h1>` : '';
+  return keep ? `![title-img](${config.imgUrl})\n<h1 class="title"> ${config.headerText} ${extraData} </h1>` : '';
 }
 
-// Transform markdown document by parsing and including data tables.
-function preProcessMd(data, e, cb) {
-  // Scan for HTML comments with a directive, e.g. <!-- $data -->.
-  const regex = /<!--\s*\$(\S+)\s*(.+?)-->/g;
+dataTransform.push({
+  key: 'header',
+  allowExtra: 'true',
+  replace: (data, name) => replaceHeader(data, name === 'header-main' ? true : config.includeHeaders),
+});
 
-  function replace(match, name, extraData) {
-    if (name === 'data') return replaceData(extraData);
-    if (name === 'header') return replaceHeader(extraData, config.includeHeaders);
-    if (name === 'header-main') return replaceHeader(extraData, true);
-    if (name === 'page-break') return '<div class="page-break-after"></div>';
-    return '';
-  }
+dataTransform.push({
+  key: 'page-break',
+  replace: () => '<div class="page-break-after"></div>',
+});
 
-  const newData = data.toString().replace(regex, replace);
-  // Insert into page, replacing the comment.
-  cb(null, Buffer.from(newData));
-}
+dataTransform.push({
+  key: 'object',
+  replace: (data) => {
+    let frontYAML;
+    let bodyText;
+    let out = '';
+
+    if (!data.includes('\n')) {
+      [frontYAML] = getDataFile(data);
+      bodyText = frontYAML.text;
+    } else if (data.includes('---')) {
+      const matches = data.match(/([\s\S]+?)---/);
+      bodyText = data.slice(matches[0].length + 1);
+      frontYAML = yaml.safeLoad(matches[1]);
+    } else {
+      bodyText = data;
+    }
+
+    const handleData = d => assembleTable(Array.isArray(d) ?
+      { data: d, header: ['|', ':-|:-'] } : getDataFile[0]);
+
+    if (frontYAML) {
+      const name = `\n<p class="lead"><strong>${frontYAML.name}</strong> <span> ${frontYAML.subtitle || ''} </span></p>\n`;
+      if (frontYAML.nameFirst === true) out += name;
+      if (frontYAML.sidebar || frontYAML.data) {
+        out += '<div class="float-right">\n';
+        if (frontYAML.sidebar) out += `\n${frontYAML.sidebar}\n`;
+        if (frontYAML.data) out += handleData(frontYAML.data);
+        out += '\n</div>\n';
+      }
+      if (frontYAML.nameFirst !== true) out += name;
+    }
+
+    out += bodyText;
+
+    return `<div class="obj-block">\n${out}\n</div>`;
+  },
+});
+
+/*
+-------------------------------------------------------------------------------
+*/
+
+const mdPdfOpts = {
+  cwd: process.cwd(),
+  cssPath: config.cssPath,
+  paperFormat: config.paperFormat,
+  preProcessMd: () => through.obj((data, e, cb) => {
+    const newData = preProcessMd(data.toString());
+    cb(null, Buffer.from(newData));
+  }),
+};
 
 // Load data when it has changed.
+// eslint-disable-next-line arrow-body-style
 gulp.task('load-data', () => {
   return gulp.src(config.dataPath)
-    .pipe(changedInPlace({firstPass: true}))
+    .pipe(changedInPlace({ firstPass: true }))
     .pipe(through.obj((file, enc, cb) => {
-      let data = yaml.safeLoadAll(file.contents);
+      const data = yaml.safeLoadAll(file.contents);
       dataFiles[file.relative] = data;
       cb();
     }));
 });
 
+// Compile each markdown file into pdf.
+// eslint-disable-next-line arrow-body-style
 gulp.task('compile-md', () => {
-  const cwd = process.cwd();
   return gulp.src(config.mdPath)
     .pipe(changed(config.out, {
       extension: '.pdf',
     }))
-    .pipe(markdownpdf({
-      cwd,
-      cssPath: config.cssPath,
-      paperFormat: config.paperFormat,
-      preProcessMd: () => through.obj(preProcessMd),
-    }))
+    .pipe(markdownpdf(mdPdfOpts))
     .pipe(gulp.dest(config.out));
 });
 
 // compile all the documents
 gulp.task('compile', gulp.series('load-data', 'compile-md'));
+
+// Make a gulp.parallel object containing tasks to create release documents.
+function makeReleaseTasks() {
+  const tasks = [];
+  for (const d of config.compiledOut) {
+    const func = () => {
+      let data;
+      let contents;
+      const files = d.length > 1 ? `{${d.join(',')}}` : d[0];
+      return gulp.src(config.mdPath.replace('*', `microluxe20_${files}`))
+        .pipe(through.obj(
+          (file, enc, cb) => {
+            if (!data) {
+              data = file;
+              contents = file.contents.toString();
+            } else contents += `\n\n${file.contents.toString()}`;
+            cb(null);
+          },
+          (cb) => {
+            data.contents = Buffer.from(contents);
+            cb(null, data);
+          },
+        ))
+        .pipe(markdownpdf(mdPdfOpts))
+        .pipe(gulp.dest(config.out));
+    };
+    func.displayName = `compile-${d[0]}`;
+    tasks.push(func);
+  }
+  return gulp.parallel(tasks);
+}
+
+// compile documents into their assigned books.
+gulp.task('compile-release', gulp.series(done => {
+  config.includeHeaders = false; done()},
+  'load-data', makeReleaseTasks()));
 
 // create release zip from documents
 gulp.task('release', done => fs.stat('documents', (err) => {
@@ -140,7 +268,7 @@ gulp.task('watch', () => {
   gulp.watch([config.mdPath, config.cssPath], gulp.task('compile'));
 });
 
-gulp.task('default', cb => {
+gulp.task('default', (cb) => {
   console.log(fs.readFileSync(config.readme, {
     encoding: 'UTF8',
   }));

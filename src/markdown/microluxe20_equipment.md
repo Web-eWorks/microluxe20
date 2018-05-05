@@ -10,10 +10,7 @@
 
 <!-- $data wealth.yml metal -->
 
------
-
 <!-- $data wealth.yml class_wealth -->
-
 </div>
 
 The most common currency used across all of Terador space is the Council Credit, normally known as the credit ($). The credit is a standardized currency jointly developed by Sol and Teramir, traded on an extremely decentralized Council-wide banking system. The end result is a currency highly resistant to forgery and inflation that can be taken anywhere an adventurer wants to go.
@@ -25,6 +22,8 @@ You begin with a certain amount of acquired credits, as determined by your chara
 ## Cybernetics
 
 **TODO:** write up rules for cybernetics: slots, limits, bonuses, etc.
+
+<!-- $page-break -->
 
 ## Weapons
 
@@ -38,19 +37,6 @@ Here is the format for weapon entries (given as column headings on the table bel
 ### Melee Weapons
 
 <!-- $data weapons.yml melee -->
-
-<div class="page-break-after"></div>
-
-### Ranged Weapons
-
-Ranged weapons use ammunition, which is consumed at a rate of 1 for every attack made, regardless of if the attack hit. When a weapon is out of ammunition, you must spend a round reloading it before you are able to fire it again. When purchased, they include one full load of ammunition and any required gear (magazine, etc.)
-
-Ranged weapons have a few extra headings:
-
-- **Ammo:** The number of shots the weapon can fire before reloading. The weapon includes this as part of the purchase price. A "–" in the Ammo field indicates the entry is a single shot weapon that doesn't need to be reloaded as a separate action.
-- **Cost:** The cost of one full load of ammunition follows the cost of the actual weapon.
-
-<!-- $data weapons.yml ranged -->
 
 ###  Thrown Weapons
 
@@ -67,7 +53,18 @@ The format for thrown weapons is as follows:
 
 <!-- $data weapons.yml thrown -->
 
-<div class="page-break-after"> </div>
+### Ranged Weapons
+
+Ranged weapons use ammunition, which is consumed at a rate of 1 for every attack made, regardless of if the attack hit. When a weapon is out of ammunition, you must spend a round reloading it before you are able to fire it again. When purchased, they include one full load of ammunition and any required gear (magazine, etc.)
+
+Ranged weapons have a few extra headings:
+
+- **Ammo:** The number of shots the weapon can fire before reloading. The weapon includes this as part of the purchase price. A "–" in the Ammo field indicates the entry is a single shot weapon that doesn't need to be reloaded as a separate action.
+- **Cost:** The cost of one full load of ammunition follows the cost of the actual weapon.
+
+<!-- $data weapons.yml ranged -->
+
+<!-- $page-break -->
 
 ## Armor & Shields
 
@@ -99,6 +96,8 @@ Characters may purchase equipment from the following lists with their starting m
 
 <!-- $data gear.yml adventuring-gear -->
 
+<!-- $page-break -->
+
 ### Clothing
 
 <!-- $data gear.yml clothing -->
@@ -106,8 +105,6 @@ Characters may purchase equipment from the following lists with their starting m
 ### Mounts and Related Gear
 
 <!-- $data gear.yml mounts -->
-
-<div class="page-break-after"></div>
 
 ### Fast Equipment Packs
 
