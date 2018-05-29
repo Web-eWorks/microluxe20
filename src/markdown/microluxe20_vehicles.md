@@ -47,7 +47,7 @@ Driving or flying a vehicle is accomplished by making MNV+Physical checks agains
 
 ### Vehicle Speed
 
-When driving or flying, you will be travelling at one of five speed levels. The speeds listed are maximum speeds for the mode, calculated from a vehicle's Speed; any speed between the current and the next lowest speed is part of the mode.
+When driving or flying, you will be travelling at one of five speed levels. The speeds listed are maximum speeds for the level, calculated from a vehicle's Speed; any speed between the current and the next lowest speed is part of the level.
 
 <!-- $data vehicles.yml move-mode float-right -->
 
@@ -55,7 +55,7 @@ When driving or flying, you will be travelling at one of five speed levels. The 
 - **Cautious:** The vehicle moves slowly. This is generally a free action, but terrain and other modifiers may necessitate a roll. A vehicle being driven backwards must use this mode.
 - **Normal:** The vehicle is travelling down a smaller road or on off-road terrain. This consumes a full action, but has a base difficulty of 0. Characters need only roll if the difficulty is increased by terrain or other conditions.
 - **Cruising:** The vehicle is travelling at high speeds on a road, in the sea, or in the air.
-- **Emergency:** Reserved for times of significant danger, vehicles travelling at Emergency speed normally can't sustain it for long without damaging their propulsion sustem.
+- **Emergency:** Reserved for times of significant danger, vehicles travelling at Emergency speed normally can't sustain it for long without damaging their propulsion system.
 
 ### Terrain and Situation
 
