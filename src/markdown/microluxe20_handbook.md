@@ -82,7 +82,7 @@ For compatibility purposes, the 3 saves in Microluxe20 (STR save, DEX save, and 
 
 There are 5 skills all characters have in common:
 
-- **Physical:** The character's ability in hand-to-hand combat and their instinctual knowledge of applying their own bodily force to a problem.
+- **Physical:** The character's ability in hand-to-hand combat and their instinctual knowledge of applying physical force to a problem.
 - **Accuracy:** The character's ability to hit a specific target, applied to anything from a stone to a gunship turret.
 - **Cunning:** The character's street-smarts and their understanding of subterfuge and deceit.
 - **Knowledge:** The character's wealth of accumulated information and their understanding of how to apply it.
@@ -120,15 +120,15 @@ Some weapons do Stun damage; this damage is resolved as normal, but is not subtr
 
 ## Traits and Quirks
 
-<!-- $data handbook.yml quirks float-right -->
+<!-- $data handbook.yml traits float-right -->
 
-Traits and Quirks are ways to fully bring your character's story into the game. To create a Trait or Quirk, you pick a topic – like snakes, or spaceships – and a specific type of roll that it will apply to. The more specific the roll, the less the Trait or Quirk will cost. Then you determine how much that roll should be increased or penalized. If it is increased you have a Trait, if it's decreased you have a Quirk.
+Traits are ways to fully bring your character's story into the game. To create a Trait, you pick a topic, (like snakes, or spaceships,) a bonus, and a specific type of roll or action that it will apply to. The higher the bonus and less specific the roll, the more the Trait costs. A Trait that provides a negative bonus is called a Quirk, and can be used to pay for positive Traits.
 
-The cost of a Trait or Quirk is equal to the numerical increase or penalty multiplied by the appropriate entry in the table on the right. You can pay for it in two ways – the first is to take an equal or greater value of Quirks than Traits, and the other is to pay with Skill points. One Skill Point is equal to 3 Trait points.
+The value of a Trait is equal to the numerical increase or penalty multiplied by the appropriate entry in the table on the right. You can pay for it in two ways – you can take an equal or greater value of negative Traits to balance the positive Traits, or you can pay for the Traits with Skill points. One Skill Point is equal to 3 Trait points.
 
-Traits and Quirks should always be checked with your Gamemaster first. Take care not to be too specific or too broad with your topic – your Gamemaster will reject a +3 MIND Trait with a topic of "everything", and a Quirk regarding a very specific brand of pistol will likely meet the axe as well. Likewise, you should take Traits and Quirks in moderation. Having 20+ Traits or Quirks (especially if they're not relevant to your character's story) will likely be rejected by your Gamemaster.
+Traits should always be checked with your Gamemaster first. Take care not to be too specific or too broad with your topic – your Gamemaster will reject a +3 MIND Trait with a topic of "everything", and a negative Trait regarding a very specific brand of pistol will likely meet the axe as well. You should take Traits in moderation. Having more than 5-6 Traits (especially if they're not relevant to your character's story) will likely be rejected by your Gamemaster.
 
-**Example:** Your character is a bright young farmboy who got a chance to work his way to the stars aboard a bulk freighter. You pick a +2 Knowledge bonus to farming, and a +2 Ranged Attack bonus to hunting game. You equalize this by taking a -2 MIND quirk to knowledge about spaceships.
+> **Example:** Your character is a bright young farmboy who got a chance to work his way to the stars aboard a bulk freighter. You pick a +2 Knowledge bonus to farming, and a +2 Ranged Attack bonus to hunting game. You equalize this by taking a -2 MIND quirk to knowledge about spaceships.
 
 Traits and Quirks are not static. As your character gets more experienced, you can gain new Traits or Quirks, or remove old ones. See the Level Advancement section for details.
 
@@ -169,9 +169,11 @@ The Attack Bonus is modified by a few actions. If a character is attacking somet
 
 A character can decide to Aim, which consumes their action for the current round and increases their attack bonus by +5 if they immediately make an attack the next round.
 
-**Example:** A Small sized character is shooting at a Large sized shipping container. The difference between Small and Large is +2, and they also chose to Aim the previous round, so they receive +7 to their attack bonus.
+> **Example:** A Small sized character is shooting at a Large sized shipping container. The difference between Small and Large is +2, and they also chose to Aim the previous round, so they receive +7 to their attack bonus.
 
 Rolling a 20 on the die (Natural 20) is an automatic hit, dealing additional damage equal to your weapon's maximum damage. Rolling a 1 on the die (Natural 1) is an automatic fail, dealing no damage regardless of the attack bonus.
+
+<div class="clear"></div>
 
 If the total attack bonus is +5 or more, the character can 'split' their attack by subtracting 5 from the attack bonus for each extra attack made. An attack may be 'split' up to three times, and the resulting attack bonus must never drop below 0. For example, if the total bonus is +12, the character can make one attack at +12, two attacks at +7, or three attacks at +2.
 
@@ -179,7 +181,7 @@ Characters may use their DEX bonus with Light melee weapons, and their STR bonus
 
 For each attack that hits, roll the damage die code on your weapon and subtract the resulting total from your opponent's HP. If your character is wielding a Heavy melee weapon, add your STR bonus to the weapon's damage total.
 
-**Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10, getting a 9. The damage is enough to finish off the Human for good, so you lower your weapon and combat ends.
+> **Example:** Your Elvir Assassin is fighting a Human Mercenary. The katana you are wielding is a light melee weapon, so you roll 1d20 and add DEX + Physical versus the Merc's Armor Class of 16. You get a 17 total, barely managing to strike past the Merc's armor. You roll your weapon's damage value of 1d10, getting a 9.
 
 ### Defending
 
@@ -187,7 +189,7 @@ On their turn, a character may choose to actively defend themselves. This is an 
 
 If an enemy attacks your character while you are defending and misses, you get a chance to make a counterattack. A counterattack is handled like a regular single attack, but the attack bonus is calculated as if you were making the maximum number of attacks that turn - you use the lowest possible attack bonus for the attack.
 
-**Example:** You are fighting a rogue combat android. You elect to defend on your turn, rolling 1d10 and raising your AC to 19. The android takes a swing at you, rolling 18, and misses slightly. You counterattack by firing your pistol at the android's core - you normally have a +7 attack bonus, so the counterattack is made with a +2 attack bonus. Your roll of 17 is enough to overcome the android's defenses, and you proceed to roll damage normally.
+> **Example:** You are fighting a rogue combat android. You elect to defend on your turn, rolling 1d10 and raising your AC to 19. The android takes a swing at you, rolling 18, and misses slightly. You counterattack by firing your pistol at the android's core - you normally have a +7 attack bonus, so the counterattack is made with a +2 attack bonus. Your roll of 17 is enough to overcome the android's defenses, and you proceed to roll damage normally.
 
 ## Programs
 
@@ -254,11 +256,11 @@ Each level adds:
 
 When your character gains a level, you can use unallocated Skill Points to gain or improve Traits and reduce or remove Quirks, with the Gamemaster's approval. The cost for doing such an action is equal to the cost to purchase the appropriate level of a Trait, as detailed in the Traits and Quirks section.
 
-**Example:** Your character has a -2 DEX quirk regarding snakes. You spent some time during your last adventure trying to reduce your fear of snakes, so the Gamemaster lets you spend a Skill Point to reduce the effect of the Quirk by 1, bringing it to -1.
+> **Example:** Your character has a -2 DEX quirk regarding snakes. You spent some time during your last adventure trying to reduce your fear of snakes, so the Gamemaster lets you spend a Skill Point to reduce the effect of the Quirk by 1, bringing it to -1.
 
 You may also gain Traits or Quirks for special actions (or particularly good role-playing) during an adventure. These are awarded at the end of an adventure, and are free, but are decided at the whims of the Gamemaster. This can be a delicate subject, so you and your Gamemaster should discuss any potential Traits or Quirks before applying anything.
 
-**Example:** You came up with a particularly inventive way to overcome your fear of snakes to save the party at a critical moment in the last adventure. The Gamemaster decides that counts as special action and excellent role-playing, so he awards you a +1 Damage Trait verus snakes.
+> **Example:** You came up with a particularly inventive way to overcome your fear of snakes to save the party at a critical moment in the last adventure. The Gamemaster decides that counts as special action and excellent role-playing, so he awards you a +1 Damage Trait verus snakes.
 
 <!-- $page-break -->
 

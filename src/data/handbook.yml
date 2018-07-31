@@ -17,14 +17,14 @@ data:
     - "**Xindai'n** | +2 DEX, +1 MIND, -1 STR"
 
 ---
-id: quirks
+id: traits
 columns: 1
 header:
     - "Roll Type | Cost"
     - ":-------- | :---"
 data:
     - "Stat         | 3"
-    - "Damage       | 2"
+    - "Damage       | 3"
     - "Skill        | 2"
     - "Stat + Skill | 1"
 
@@ -35,9 +35,9 @@ header:
     - "Situation | Attack DC"
     - ":-------- | :--------"
 data:
-    - "Target Sleeping / Unconscious    | -5"
+    - "Target Sleeping                  | -5"
     - "Target Unaware                   | -2"
-    - "Target Distracted / In Combat	| -1"
+    - "Target In Combat               	| -1"
     - "Target In Light Cover			| +2"
     - "Target In Heavy Cover			| +5"
 

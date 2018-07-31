@@ -10,7 +10,7 @@ const through = require('through2');
 
 const config = {
   dataPath: 'src/data/**/*.{yml,yaml}',
-  mdPath: 'src/markdown/*.md',
+  mdPath: 'src/markdown/**/*.md',
   cssPath: 'src/styles/main.css',
   out: 'documents',
   paperFormat: 'Letter',

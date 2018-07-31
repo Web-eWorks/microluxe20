@@ -35,7 +35,7 @@ Vehicle Sizes are not equal to character Sizes; Normal and smaller characters co
 
 **Speed:** A measure of how fast the vehicle travels at Normal speed, usually expressed in MPH or KPH. Speed can also be expressed in Meters per Round. <br> For reference, one round is 1/600th of an hour.
 
-**Armor Class (AC):** A vehicle's Armor class is equal to `10 + MNV + Armor Bonus (if any)` of the vehicle.
+**Armor Class (AC):** A vehicle's Armor class is equal to `10 + MNV bonus + Armor bonus (if any)` of the vehicle.
 
 **Damage:** This measures the condition of the vehicle, according to the table on the right. A vehicle can have a single damage meter, or as many as the gamemaster decides. A vehicle can take an infinite amount of Very Light damage, but damage of greater levels will increase the meter.
 
@@ -181,6 +181,66 @@ An old SUV made battle-ready by the addition of some armor plating and a makeshi
 # Spaceflight
 
 TODO: space/atmo flight rules: piloting, gunnery, sensors, etc.
+
+Hull Modules:
+- Hull
+- Weapon / Tool Hardpoints
+- In-system thrusters
+- Atmospheric thrusters
+- Armor plating
+
+Internal Modules:
+- Jump drive
+- Shield Generators
+- Sensor packages
+- Power Core
+- Computers (nav, target, scan)
+- Life support
+
+Pressurized Modules:
+- Control Stations / Bridge
+- Airlocks
+- Workshops
+- Hangars / Repair bays / Launch Tubes
+- Cargo bays
+- Hydroponics
+- Medical / Infirmary
+- Cabins / Bunks (captain, crew, passenger)
+- Brig / Prison cells
+- Boarding umbilicals
+- Cryosleep tubes
+
+<!-- $page-break -->
+
+<!-- $object
+name: Light Fighter
+subtitle: "TGH: 8, MNV: 10, COR: 4 | AC: 18, Speed: 340 | Cost: $54,000"
+nameFirst: true
+data:
+    - "**Hull** | 40"
+    - "**Armor** | 30"
+    - "**Shield** | 40"
+    - "**Mass** | 18t"
+---
+
+An in-system fighter designed for light-duty police work.
+
+**Modules:**
+- CL-4 Light Aeroframe (4t, 10 module slots, 40 hp)
+    - Medium Armor (6t, 4 TGH, 30 HP)
+- Shield Generator (2t, 2 TGH, 40 hp)
+- R-4 In-system drive (2t)
+- R-4 Reactor Core (40 energy, 3t)
+- Cockpit (1 station)
+    - Basic Life support (O2 link, 16 hours)
+    - R-4 Flight Computer (4 COR)
+    - R-2 Targeting Computer (+2 Accuracy)
+- 2x S2 Laser hardpoints
+    - S2 Gatling Lasers (1d12 dmg, 0.5t)
+- 1x S1 Utility hardpoint
+    - Empty
+- 2x Empty module slots
+-->
 
 ## Creating Spaceships
 
